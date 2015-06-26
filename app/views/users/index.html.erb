@@ -1,0 +1,26 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Credits (R$)</th>
+      <th>Total Sold (R$)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.profile.name %></td>
+        <td><%= user.email %></td>
+        <td><%= user.profile.credits %></td>
+        <td><%= user.sales.joins(:product).sum('products.price') %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

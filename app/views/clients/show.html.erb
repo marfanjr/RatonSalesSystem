@@ -1,0 +1,32 @@
+<%- model_class = Client -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+
+<dl class="dl-horizontal">
+  <dt><strong>Nome:</strong></dt>
+  <dd><%= @client.profile.name %></dd>
+  <dt><strong>CPF:</strong></dt>
+  <dd><%= @client.profile.cpf %></dd>
+  <dt><strong>RG:</strong></dt>
+  <dd><%= @client.profile.rg %></dd>
+  <dt><strong>Telephone:</strong></dt>
+  <dd><%= @client.profile.telephone %></dd>
+  <dt><strong>Cell Phone:</strong></dt>
+  <dd><%= @client.profile.cell_phone %></dd>
+  <dt><strong>Email:</strong></dt>
+  <dd><%= @client.profile.email %></dd>
+  <dt><strong>Credits:</strong></dt>
+  <dd><%= @client.profile.credits %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              clients_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_client_path(@client), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              client_path(@client),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

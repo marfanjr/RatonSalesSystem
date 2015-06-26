@@ -1,0 +1,73 @@
+<%= form_for @profile, :html => { :class => "form-horizontal profile" } do |f| %>
+
+    <% if @profile.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @profile.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@profile[:name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :cpf, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :cpf, :class => 'form-control' %>
+    </div>
+    <%= error_span(@profile[:cpf]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :rg, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :rg, :class => 'form-control' %>
+    </div>
+    <%= error_span(@profile[:rg]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :telephone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :telephone, :class => 'form-control' %>
+    </div>
+    <%= error_span(@profile[:telephone]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :cell_phone, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :cell_phone, :class => 'form-control' %>
+    </div>
+    <%= error_span(@profile[:cell_phone]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :email, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'form-control' %>
+    </div>
+    <%= error_span(@profile[:email]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :credits, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :credits, :class => 'form-control' %>
+    </div>
+    <%= error_span(@profile[:credits]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            profiles_path, :class => 'btn btn-default' %>
+
+<% end %>

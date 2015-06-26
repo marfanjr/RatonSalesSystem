@@ -1,0 +1,92 @@
+<%= form_for @client, :html => { :class => "form-horizontal client" } do |f| %>
+
+  <% if @client.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @client.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <% if @client.new_record? %>
+    <div class="invisible">
+      <%= @client.build_profile %>
+    </div>
+  <% end %>
+
+  <div class="container">
+    <div class="navbar-body">
+      <div class="jumbotron">
+
+        <%= f.fields_for :profile, @client.profile do |ff| %>
+          <div class="form-group">
+            <%= ff.label :name, :class => 'col-sm-2 control-label' %>
+            <div class="col-sm-6">
+              <%= ff.text_field :name, :class => 'form-control' %>
+            </div>
+            <%= error_span(@client.profile[:name]) %>
+          </div>
+          <div class="form-group">
+            <%= ff.label :cpf, :class => 'col-sm-2 control-label' %>
+            <div class="col-sm-6">
+              <%= ff.text_field :cpf, :class => 'form-control' %>
+            </div>
+            <%= error_span(@client.profile[:cpf]) %>
+          </div>
+          <div class="form-group">
+            <%= ff.label :rg, :class => 'col-sm-2 control-label' %>
+            <div class="col-sm-6">
+              <%= ff.text_field :rg, :class => 'form-control' %>
+            </div>
+            <%= error_span(@client.profile[:rg]) %>
+          </div>
+          <div class="form-group">
+            <%= ff.label :telephone, :class => 'col-sm-2 control-label' %>
+            <div class="col-sm-6">
+              <%= ff.text_field :telephone, :class => 'form-control' %>
+            </div>
+            <%= error_span(@client.profile[:telephone]) %>
+          </div>
+          <div class="form-group">
+            <%= ff.label :cell_phone, :class => 'col-sm-2 control-label' %>
+            <div class="col-sm-6">
+              <%= ff.text_field :cell_phone, :class => 'form-control' %>
+            </div>
+            <%= error_span(@client.profile[:cell_phone]) %>
+          </div>
+          <div class="form-group">
+            <%= ff.label :email, :class => 'col-sm-2 control-label' %>
+            <div class="col-sm-6">
+              <%= ff.text_field :email, :class => 'form-control' %>
+            </div>
+            <%= error_span(@client.profile[:email]) %>
+          </div>
+          <div class="form-group">
+            <%= ff.label :credits, :class => 'col-sm-2 control-label' %>
+            <div class="col-sm-6">
+              <%= ff.text_field :credits, :class => 'form-control' %>
+            </div>
+            <%= error_span(@client.profile[:credits]) %>
+          </div>
+        <% end %>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-6">
+            <%= f.submit nil, :class => 'btn btn-primary' %>
+            <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                      clients_path, :class => 'btn btn-default' %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+<% end %>
