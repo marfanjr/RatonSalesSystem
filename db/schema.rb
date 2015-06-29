@@ -36,9 +36,9 @@ ActiveRecord::Schema.define(version: 20150619031955) do
     t.string   "telephone",  limit: 255
     t.string   "cell_phone", limit: 255
     t.string   "email",      limit: 255
-    t.decimal  "credits",                precision: 5, scale: 2
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
+    t.decimal  "credits",                precision: 5, scale: 2, default: 0.0
+    t.datetime "created_at",                                                   null: false
+    t.datetime "updated_at",                                                   null: false
   end
 
   create_table "sales", force: :cascade do |t|
