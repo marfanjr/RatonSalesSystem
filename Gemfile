@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-datepicker-rails'
+
+gem 'annotate'
+
 gem 'cancancan', '~> 1.10'
 
 gem 'mysql2'

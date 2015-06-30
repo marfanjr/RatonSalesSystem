@@ -1,0 +1,68 @@
+<%= form_for @transaction, :html => { :class => "form-horizontal transaction" } do |f| %>
+
+  <% if @transaction.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @transaction.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="container">
+    <div class="navbar-body">
+      <div class="jumbotron">
+
+        <div class="form-group">
+          <%= f.label "Customer Id", :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.text_field :customer_id, :class => 'form-control' %>
+          </div>
+          <%= error_span(@transaction[:customer_id]) %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :product_id, class: 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+
+            <%= collection_select( :transaction, :product_id, Product.all, :id, :name_price, { :multiple => false }, {class: "form-control"})%>
+
+          </div>
+          <%= error_span(@transaction[:product_id]) %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :quantity, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.number_field :quantity, :class => 'form-control' %>
+          </div>
+          <%= error_span(@transaction[:quantity]) %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :party_id, class: 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+
+            <%= collection_select( :transaction, :party_id, Party.order(party_date: :asc), :id, :name, { :multiple => false }, {class: "form-control"})%>
+
+          </div>
+          <%= error_span(@transaction[:party_id]) %>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-6">
+            <%= f.submit nil, :class => 'btn btn-primary' %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<% end %>

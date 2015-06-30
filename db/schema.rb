@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150619031955) do
+ActiveRecord::Schema.define(version: 20150630033651) do
 
   create_table "clients", force: :cascade do |t|
     t.integer  "profile_id", limit: 4
@@ -20,6 +20,29 @@ ActiveRecord::Schema.define(version: 20150619031955) do
   end
 
   add_index "clients", ["profile_id"], name: "index_clients_on_profile_id", using: :btree
+
+  create_table "inventory_items", force: :cascade do |t|
+    t.integer  "product_id",       limit: 4
+    t.integer  "party_id",         limit: 4
+    t.integer  "amount_purchased", limit: 4
+    t.decimal  "unit_cost",                  precision: 5, scale: 2
+    t.decimal  "total_cost",                 precision: 5, scale: 2
+    t.decimal  "profit_margin",              precision: 5, scale: 2
+    t.decimal  "amount_sold",                precision: 5, scale: 2, default: 0.0
+    t.datetime "created_at",                                                       null: false
+    t.datetime "updated_at",                                                       null: false
+    t.decimal  "msrp",                       precision: 5, scale: 2
+  end
+
+  add_index "inventory_items", ["party_id"], name: "index_inventory_items_on_party_id", using: :btree
+  add_index "inventory_items", ["product_id"], name: "index_inventory_items_on_product_id", using: :btree
+
+  create_table "parties", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.date     "party_date"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
 
   create_table "products", force: :cascade do |t|
     t.string   "name",        limit: 255
@@ -30,15 +53,16 @@ ActiveRecord::Schema.define(version: 20150619031955) do
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "cpf",        limit: 255
-    t.string   "rg",         limit: 255
-    t.string   "telephone",  limit: 255
-    t.string   "cell_phone", limit: 255
-    t.string   "email",      limit: 255
-    t.decimal  "credits",                precision: 5, scale: 2, default: 0.0
-    t.datetime "created_at",                                                   null: false
-    t.datetime "updated_at",                                                   null: false
+    t.string   "name",         limit: 255
+    t.string   "cpf",          limit: 255
+    t.string   "rg",           limit: 255
+    t.string   "telephone",    limit: 255
+    t.string   "cell_phone",   limit: 255
+    t.string   "email",        limit: 255
+    t.decimal  "credits",                  precision: 5, scale: 2, default: 0.0
+    t.datetime "created_at",                                                     null: false
+    t.datetime "updated_at",                                                     null: false
+    t.integer  "profile_type", limit: 4
   end
 
   create_table "sales", force: :cascade do |t|
@@ -52,6 +76,22 @@ ActiveRecord::Schema.define(version: 20150619031955) do
   add_index "sales", ["client_id"], name: "index_sales_on_client_id", using: :btree
   add_index "sales", ["product_id"], name: "index_sales_on_product_id", using: :btree
   add_index "sales", ["user_id"], name: "index_sales_on_user_id", using: :btree
+
+  create_table "transactions", force: :cascade do |t|
+    t.integer  "employee_id", limit: 4
+    t.integer  "customer_id", limit: 4
+    t.integer  "party_id",    limit: 4
+    t.decimal  "quantity",              precision: 5, scale: 2
+    t.decimal  "value",                 precision: 5, scale: 2
+    t.datetime "created_at",                                    null: false
+    t.datetime "updated_at",                                    null: false
+    t.integer  "product_id",  limit: 4
+  end
+
+  add_index "transactions", ["customer_id"], name: "index_transactions_on_customer_id", using: :btree
+  add_index "transactions", ["employee_id"], name: "index_transactions_on_employee_id", using: :btree
+  add_index "transactions", ["party_id"], name: "index_transactions_on_party_id", using: :btree
+  add_index "transactions", ["product_id"], name: "index_transactions_on_product_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   devise_for :users, :skip => [:sessions]
   resources :users, :only => [:index]
   as :user do
@@ -8,7 +9,7 @@ Rails.application.routes.draw do
     delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
 
     authenticated :user do
-      root 'sales#new', as: :authenticated_root
+      root 'transactions#new', as: :authenticated_root
     end
 
     unauthenticated do
@@ -21,6 +22,9 @@ Rails.application.routes.draw do
     resources :sales
     resources :profiles
     resources :products
+    resources :inventory_items
+    resources :transactions
+    resources :parties
 
   end
 
