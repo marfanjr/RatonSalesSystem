@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150630033651) do
+ActiveRecord::Schema.define(version: 20150702034000) do
 
   create_table "clients", force: :cascade do |t|
     t.integer  "profile_id", limit: 4
@@ -78,14 +78,16 @@ ActiveRecord::Schema.define(version: 20150630033651) do
   add_index "sales", ["user_id"], name: "index_sales_on_user_id", using: :btree
 
   create_table "transactions", force: :cascade do |t|
-    t.integer  "employee_id", limit: 4
-    t.integer  "customer_id", limit: 4
-    t.integer  "party_id",    limit: 4
-    t.decimal  "quantity",              precision: 5, scale: 2
-    t.decimal  "value",                 precision: 5, scale: 2
-    t.datetime "created_at",                                    null: false
-    t.datetime "updated_at",                                    null: false
-    t.integer  "product_id",  limit: 4
+    t.integer  "employee_id",   limit: 4
+    t.integer  "customer_id",   limit: 4
+    t.integer  "party_id",      limit: 4
+    t.decimal  "quantity",                  precision: 5, scale: 2
+    t.decimal  "value",                     precision: 5, scale: 2
+    t.datetime "created_at",                                        null: false
+    t.datetime "updated_at",                                        null: false
+    t.integer  "product_id",    limit: 4
+    t.string   "product_name",  limit: 255
+    t.decimal  "product_price",             precision: 5, scale: 2
   end
 
   add_index "transactions", ["customer_id"], name: "index_transactions_on_customer_id", using: :btree

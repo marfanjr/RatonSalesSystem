@@ -9,17 +9,20 @@
       <th>Name</th>
       <th>Email</th>
       <th>Credits (R$)</th>
-      <th>Total Sold (R$)</th>
     </tr>
   </thead>
   <tbody>
     <% @users.each do |user| %>
-      <tr>
+      <tr class='clickable-row' data-href="/profiles/<%= user.profile.id %>" >
+      
         <td><%= user.id %></td>
         <td><%= user.profile.name %></td>
         <td><%= user.email %></td>
         <td><%= user.profile.credits %></td>
-        <td><%= user.sales.joins(:product).sum('products.price') %></td>
+        <td>
+          <%= link_to 'Bank Statement',
+                      "/users/", :class => 'btn btn-default btn-xs' %>
+        </td>
       </tr>
     <% end %>
   </tbody>

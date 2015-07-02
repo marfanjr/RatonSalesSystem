@@ -2,15 +2,17 @@
 #
 # Table name: transactions
 #
-#  id          :integer          not null, primary key
-#  employee_id :integer
-#  customer_id :integer
-#  party_id    :integer
-#  quantity    :decimal(5, 2)
-#  value       :decimal(5, 2)
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#  product_id  :integer
+#  id            :integer          not null, primary key
+#  employee_id   :integer
+#  customer_id   :integer
+#  party_id      :integer
+#  quantity      :decimal(5, 2)
+#  value         :decimal(5, 2)
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  product_id    :integer
+#  product_name  :string(255)
+#  product_price :decimal(5, 2)
 #
 
 class Transaction < ActiveRecord::Base
@@ -22,8 +24,14 @@ class Transaction < ActiveRecord::Base
   before_validation :cash_customer_credits
   before_validation :set_employee
   before_validation :set_value
+  before_validation :set_product_name_and_price
   before_validation :update_inventory_item
   before_destroy :reverse_customer_credits
+
+  def set_product_name_and_price
+    self.product_name = product.name
+    self.product_price = product.price
+  end
 
   def set_value
     self.value = self.quantity * self.product.price

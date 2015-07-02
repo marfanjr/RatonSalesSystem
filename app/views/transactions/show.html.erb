@@ -5,17 +5,17 @@
 
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:employee_id) %>:</strong></dt>
-  <dd><%= @transaction.employee_id %></dd>
+  <dd><%= @transaction.employee.profile.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:customer_id) %>:</strong></dt>
-  <dd><%= @transaction.customer_id %></dd>
+  <dd><%= @transaction.customer.profile.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:party_id) %>:</strong></dt>
-  <dd><%= @transaction.party_id %></dd>
+  <dd><%= @transaction.party.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:quantity) %>:</strong></dt>
   <dd><%= @transaction.quantity %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:product_id) %>:</strong></dt>
+  <dd><%= @transaction.product.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:value) %>:</strong></dt>
   <dd><%= @transaction.value %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:product_id) %>:</strong></dt>
-  <dd><%= @transaction.product_id %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

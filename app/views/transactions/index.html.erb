@@ -6,12 +6,13 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:employee_id) %></th>
       <th><%= model_class.human_attribute_name(:customer_id) %></th>
+      <th><%= model_class.human_attribute_name(:employee_id) %></th>
       <th><%= model_class.human_attribute_name(:party_id) %></th>
       <th><%= model_class.human_attribute_name(:quantity) %></th>
+      <th><%= model_class.human_attribute_name(:product_name) %></th>
+      <th><%= model_class.human_attribute_name(:product_price) %></th>
       <th><%= model_class.human_attribute_name(:value) %></th>
-      <th><%= model_class.human_attribute_name(:product_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -20,12 +21,13 @@
     <% @transactions.each do |transaction| %>
       <tr>
         <td><%= link_to transaction.id, transaction_path(transaction) %></td>
-        <td><%= transaction.employee_id %></td>
         <td><%= transaction.customer_id %></td>
+        <td><%= transaction.employee_id %></td>
         <td><%= transaction.party_id %></td>
         <td><%= transaction.quantity %></td>
+        <td><%= transaction.product_name %></td>
+        <td><%= transaction.product_price %></td>
         <td><%= transaction.value %></td>
-        <td><%= transaction.product_id %></td>
         <td><%=l transaction.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

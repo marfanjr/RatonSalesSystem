@@ -26,6 +26,8 @@ class User < ActiveRecord::Base
 
   belongs_to :profile
   has_many :sales
+  has_many :transactions, foreign_key: 'employee_id'
+  has_many :transactions, foreign_key: 'customer_id'
 
   accepts_nested_attributes_for :profile
 

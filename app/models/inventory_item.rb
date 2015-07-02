@@ -9,9 +9,10 @@
 #  unit_cost        :decimal(5, 2)
 #  total_cost       :decimal(5, 2)
 #  profit_margin    :decimal(5, 2)
-#  amount_sold      :decimal(5, 2)
+#  amount_sold      :decimal(5, 2)    default(0.0)
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
+#  msrp             :decimal(5, 2)
 #
 
 class InventoryItem < ActiveRecord::Base
