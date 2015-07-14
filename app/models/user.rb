@@ -24,12 +24,15 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  belongs_to :profile
+  belongs_to :profile, dependent: :destroy
   has_many :sales
   has_many :transactions, foreign_key: 'employee_id'
   has_many :transactions, foreign_key: 'customer_id'
 
   accepts_nested_attributes_for :profile
+
+
+  before_create :randomize_id
 
   before_validation :set_user_email
 
@@ -40,4 +43,13 @@ class User < ActiveRecord::Base
   def set_user_email
   	self.email = self.profile.email
   end
+
+  
+private
+  def randomize_id
+    begin
+      self.id = SecureRandom.random_number(1_000_000)
+    end while User.where(id: self.id).exists?
+  end
+
 end

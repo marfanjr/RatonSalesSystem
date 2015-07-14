@@ -13,18 +13,17 @@
   </thead>
   <tbody>
     <% @users.each do |user| %>
-      <tr class='clickable-row' data-href="/profiles/<%= user.profile.id %>" >
-      
+      <tr class='clickable-row' data-href="/profiles/<%=user.profile.id%>" >
         <td><%= user.id %></td>
-        <td><%= user.profile.name %></td>
+        <td><%= link_to user.profile.name, profile_path(user.profile) %></td>
         <td><%= user.email %></td>
         <td><%= user.profile.credits %></td>
         <td>
-          <%= link_to 'Bank Statement',
-                      "/users/", :class => 'btn btn-default btn-xs' %>
+          <%= link_to 'Bank Statement', {controller: "users", action: "bank_statement", id: user.id}, :class => 'btn btn-default btn-xs' %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-  <%= link_to('New', '/users/sign_up', :class => 'btn btn-primary') %>
+  <%= link_to('New', signup_url, :class => 'btn btn-primary') %>
+

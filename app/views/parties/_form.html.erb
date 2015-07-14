@@ -50,6 +50,14 @@
         </div>
 
         <div class="form-group">
+          <%= f.label :ticket_value, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.number_field :ticket_value, :class => 'form-control' %>
+          </div>
+          <%= error_span(@party[:ticket_value]) %>
+        </div>
+
+        <div class="form-group">
           <div class="col-sm-offset-2 col-sm-6">
             <%= f.submit nil, :class => 'btn btn-primary' %>
           </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150702034000) do
+ActiveRecord::Schema.define(version: 20150703001104) do
 
   create_table "clients", force: :cascade do |t|
     t.integer  "profile_id", limit: 4
@@ -38,10 +38,11 @@ ActiveRecord::Schema.define(version: 20150702034000) do
   add_index "inventory_items", ["product_id"], name: "index_inventory_items_on_product_id", using: :btree
 
   create_table "parties", force: :cascade do |t|
-    t.string   "name",       limit: 255
+    t.string   "name",         limit: 255
     t.date     "party_date"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                                                     null: false
+    t.datetime "updated_at",                                                     null: false
+    t.decimal  "ticket_value",             precision: 5, scale: 2, default: 0.0
   end
 
   create_table "products", force: :cascade do |t|

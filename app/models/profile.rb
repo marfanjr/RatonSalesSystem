@@ -22,9 +22,8 @@ class Profile < ActiveRecord::Base
 
 	validates :name, presence: true, uniqueness: true
 	validates :email, presence: true, uniqueness: true
-	validates :cpf, uniqueness: true
-	validates :rg, uniqueness: true
-
+	# validates :cpf, uniqueness: true
+	# validates :rg, uniqueness: true
 	before_validation :capitalize_name
 
 	enum profile_type: [:employee, :customer]
@@ -32,7 +31,7 @@ class Profile < ActiveRecord::Base
 	def capitalize_name
 		self.name = self.name.split.map(&:capitalize).join(' ')
 	end
-	
-  
+
+
 end
 

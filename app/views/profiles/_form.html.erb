@@ -15,59 +15,69 @@
     </div>
   <% end %>
 
-  <div class="control-group">
-    <%= f.label :name, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :name, :class => 'form-control' %>
-    </div>
-    <%= error_span(@profile[:name]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :cpf, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :cpf, :class => 'form-control' %>
-    </div>
-    <%= error_span(@profile[:cpf]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :rg, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :rg, :class => 'form-control' %>
-    </div>
-    <%= error_span(@profile[:rg]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :telephone, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :telephone, :class => 'form-control' %>
-    </div>
-    <%= error_span(@profile[:telephone]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :cell_phone, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :cell_phone, :class => 'form-control' %>
-    </div>
-    <%= error_span(@profile[:cell_phone]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :email, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :email, :class => 'form-control' %>
-    </div>
-    <%= error_span(@profile[:email]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :credits, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :credits, :class => 'form-control' %>
-    </div>
-    <%= error_span(@profile[:credits]) %>
-  </div>
+  <div class="container">
+    <div class="navbar-body">
+      <div class="jumbotron">
 
 
-  <%= f.submit nil, :class => 'btn btn-primary' %>
-  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-            profiles_path, :class => 'btn btn-default' %>
+        <div class="form-group">
+          <%= f.label :name, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.text_field :name, :class => 'form-control' %>
+          </div>
+          <%= error_span(@profile[:name]) %>
+        </div>
+        <div class="form-group">
+          <%= f.label :cpf, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.text_field :cpf, :class => 'form-control' %>
+          </div>
+          <%= error_span(@profile[:cpf]) %>
+        </div>
+        <div class="form-group">
+          <%= f.label :rg, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.text_field :rg, :class => 'form-control' %>
+          </div>
+          <%= error_span(@profile[:rg]) %>
+        </div>
+        <div class="form-group">
+          <%= f.label :telephone, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.text_field :telephone, :class => 'form-control' %>
+          </div>
+          <%= error_span(@profile[:telephone]) %>
+        </div>
+        <div class="form-group">
+          <%= f.label :cell_phone, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.text_field :cell_phone, :class => 'form-control' %>
+          </div>
+          <%= error_span(@profile[:cell_phone]) %>
+        </div>
+        <div class="form-group">
+          <%= f.label :email, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.text_field :email, :class => 'form-control' %>
+          </div>
+          <%= error_span(@profile[:email]) %>
+        </div>
+        <div class="form-group">
+          <%= f.label :credits, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+            <%= f.number_field :credits, :class => 'form-control' %>
+          </div>
+          <%= error_span(@profile[:credits]) %>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-6">
+            <%= f.submit nil, :class => 'btn btn-primary' %>
+            <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                          profiles_path, :class => 'btn btn-default' %>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>s
 <% end %>

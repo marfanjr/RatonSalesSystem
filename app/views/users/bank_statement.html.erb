@@ -1,0 +1,56 @@
+<%- model_class = Sale -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => "Bank Statement"%></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <% if @shopping.presence %>
+    <dt><strong><%= model_class.human_attribute_name(:customer_id) %>:</strong></dt>
+    <dd><%= @shopping.first.customer.profile.name %></dd>
+    <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+    <dd><%= @shopping.first.customer.profile.email %></dd>
+    <dt><strong><%= model_class.human_attribute_name(:credits) %>:</strong></dt>
+    <dd><%= @shopping.first.customer.profile.credits %></dd>
+    
+  <% end %>
+</dl>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th>Vendor</th>
+      <th><%= model_class.human_attribute_name(:product_id) %></th>
+      <th>Unit price (R$)</th>
+      <th>Quantity</th>
+      <th>Purchase Price (R$)</th>
+      <th>Party</th>
+
+      <th>Date of purchase</th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @shopping.each do |shop| %>
+      <tr>
+        <td><%= shop.id %></td>
+        <td><%= shop.employee.profile.name %></td>
+        <td><%= shop.product_name %></td>
+        <td><%= number_with_precision(shop.product_price, :precision => 2) %></td>
+        <td><%= shop.quantity %></td>
+        <td><%= shop.value %></td>
+        <td><%= shop.party.name %></td>
+
+        <td><%=l shop.created_at %></td>
+        <td>
+          <%= link_to "Reverse",
+                      transaction_path(shop),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

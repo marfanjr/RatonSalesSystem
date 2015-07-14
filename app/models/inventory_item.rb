@@ -19,8 +19,8 @@ class InventoryItem < ActiveRecord::Base
   belongs_to :product
   belongs_to :party
 
-  before_validation :set_msrp
-  before_validation :set_total_cost
+  # before_validation :set_msrp
+  # before_validation :set_total_cost
 
 
   def set_msrp

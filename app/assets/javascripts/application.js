@@ -79,9 +79,15 @@ $('#select-to').selectize({
         return false;
     }
 });
-
-jQuery(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.document.location = $(this).data("href");
-    });
+$(document).ready(function() {
+  // Make table rows clickable
+  $(".table tr").on('click', function(event) {
+    var target = $(event.target);
+    if (target.is(":not(a)")) {
+      var href = $(this).find("a").first().attr("href");
+      if(href) {
+        window.location.href = href;
+      }
+    }
+  });
 });

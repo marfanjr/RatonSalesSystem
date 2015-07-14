@@ -12,5 +12,5 @@
 class Party < ActiveRecord::Base
   has_many :inventory_items
   has_many :transactions
-  
+  has_and_belongs_to_many :guests, join_table: "guests_parties", association_foreign_key: 'guest_id', class_name: "User"
 end

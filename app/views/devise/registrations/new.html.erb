@@ -17,6 +17,7 @@
       </div>
       <%= error_span(resource.profile[:name]) %>
     </div>
+<!--
     <div class="form-group">
       <%= ff.label :cpf, :class => 'col-sm-2 control-label' %>
       <div class="col-sm-6">
@@ -38,6 +39,7 @@
       </div>
       <%= error_span(resource.profile[:telephone]) %>
     </div>
+-->
     <div class="form-group">
       <%= ff.label :cell_phone, :class => 'col-sm-2 control-label' %>
       <div class="col-sm-6">
@@ -52,7 +54,26 @@
       </div>
       <%= error_span(resource.profile[:email]) %>
     </div>
+    <div class="form-group">
+      <%= ff.label :credits, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.number_field :credits, :class => 'form-control' %>
+      </div>
+      <%= error_span(resource.profile[:credits]) %>
+    </div>
   <% end %>
+
+
+
+
+    <div class="actions">
+        <%= f.hidden_field :password, value: '12345678' %>
+    </div>
+
+    <div class="actions">
+        <%= f.hidden_field :password_confirmation, value: '12345678' %>
+    </div>
+<!--
 
   <div class="form-group">
       <%= f.label :password, class: "col-sm-2 control-label" %>
@@ -67,6 +88,7 @@
           <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
       </div>
   </div>
+-->
 
   <div class="form-group">
       <div class="col-sm-offset-2 col-sm-6">

@@ -1,5 +1,82 @@
-<%- model_class = User -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
-</div>
-<%= render :partial => 'form' %>
+<h2>Sign up</h2>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
+<%= devise_error_messages! %>
+
+  <% if resource.new_record? %>
+    <div class="invisible">
+      <%= resource.build_profile %>
+    </div>
+  <% end %>
+
+  <%= f.fields_for :profile, resource.profile do |ff| %>
+
+    <div class="form-group">
+      <%= ff.label :name, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :name, :class => 'form-control' %>
+      </div>
+      <%= error_span(resource.profile[:name]) %>
+    </div>
+    <div class="form-group">
+      <%= ff.label :cpf, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :cpf, :class => 'form-control' %>
+      </div>
+      <%= error_span(resource.profile[:cpf]) %>
+    </div>
+    <div class="form-group">
+      <%= ff.label :rg, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :rg, :class => 'form-control' %>
+      </div>
+      <%= error_span(resource.profile[:rg]) %>
+    </div>
+    <div class="form-group">
+      <%= ff.label :telephone, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :telephone, :class => 'form-control' %>
+      </div>
+      <%= error_span(resource.profile[:telephone]) %>
+    </div>
+    <div class="form-group">
+      <%= ff.label :cell_phone, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :cell_phone, :class => 'form-control' %>
+      </div>
+      <%= error_span(resource.profile[:cell_phone]) %>
+    </div>
+    <div class="form-group">
+      <%= ff.label :email, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :email, :class => 'form-control' %>
+      </div>
+      <%= error_span(resource.profile[:email]) %>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+      <%= f.label :password, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <%= f.label :password_confirmation, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-6">
+          <%= f.submit "Sign up", class: "btn btn-primary" %>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-6">
+          <%= render "devise/shared/links" %>
+      </div>
+  </div>
+<% end %>

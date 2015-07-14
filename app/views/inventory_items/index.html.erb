@@ -5,7 +5,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:product_id) %></th>
       <th><%= model_class.human_attribute_name(:party_id) %></th>
       <th><%= model_class.human_attribute_name(:amount_purchased) %></th>
@@ -20,9 +19,8 @@
   <tbody>
     <% @inventory_items.each do |inventory_item| %>
       <tr>
-        <td><%= link_to inventory_item.id, inventory_item_path(inventory_item) %></td>
-        <td><%= inventory_item.product_id %></td>
-        <td><%= inventory_item.party_id %></td>
+        <td><%= link_to inventory_item.product.name, inventory_item_path(inventory_item) %></td>
+        <td><%= inventory_item.party.name %></td>
         <td><%= inventory_item.amount_purchased %></td>
         <td><%= inventory_item.unit_cost %></td>
         <td><%= inventory_item.total_cost %></td>

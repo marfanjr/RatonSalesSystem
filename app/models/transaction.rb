@@ -21,11 +21,11 @@ class Transaction < ActiveRecord::Base
   belongs_to :product
   belongs_to :party
 
-  before_validation :cash_customer_credits
   before_validation :set_employee
   before_validation :set_value
   before_validation :set_product_name_and_price
   before_validation :update_inventory_item
+  before_validation :cash_customer_credits
   before_destroy :reverse_customer_credits
 
   def set_product_name_and_price
@@ -48,17 +48,16 @@ class Transaction < ActiveRecord::Base
       errors.add(:employee_id, "customer not found.") 
       return       
     end 
-    ap product_id
-  	if self.customer.profile.credits < self.product.price
+  	if self.customer.profile.credits < (self.product.price * self.quantity)
   		errors.add(:credits, "customer uncredited available") 
   		return
   	end
-  	self.customer.profile.credits = self.customer.profile.credits - self.product.price
+  	self.customer.profile.credits = self.customer.profile.credits - (self.product.price * self.quantity)
   	self.customer.profile.save
   end
 
   def reverse_customer_credits
-    self.customer.profile.credits = self.customer.profile.credits + self.product.price
+    self.customer.profile.credits = self.customer.profile.credits + (self.product.price * self.quantity)
     self.customer.profile.save
   end
   def set_employee

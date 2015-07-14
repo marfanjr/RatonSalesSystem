@@ -21,8 +21,8 @@
     <% @transactions.each do |transaction| %>
       <tr>
         <td><%= link_to transaction.id, transaction_path(transaction) %></td>
-        <td><%= transaction.customer_id %></td>
-        <td><%= transaction.employee_id %></td>
+        <td><%= transaction.customer.profile.name %></td>
+        <td><%= transaction.employee.profile.name %></td>
         <td><%= transaction.party_id %></td>
         <td><%= transaction.quantity %></td>
         <td><%= transaction.product_name %></td>
