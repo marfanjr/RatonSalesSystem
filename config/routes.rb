@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  devise_for :users, :skip => [:sessions], :controllers => { :registrations => "registrations" }
+  devise_for :users, :skip => [:sessions], :controllers => { :registrations => "users" }
 
 
   resources :users do
@@ -16,15 +16,14 @@ Rails.application.routes.draw do
     get 'signin' => 'devise/sessions#new', :as => :new_user_session
     post 'signin' => 'devise/sessions#create', :as => :user_session
     delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
-    get "signup", :to => "devise/registrations#new"
 
     authenticated :user do
       root 'transactions#new', as: :authenticated_root
     end
 
-    unauthenticated do
-      root 'devise/sessions#new', as: :unauthenticated_root
-    end
+    # unauthenticated do
+    #   root 'devise/sessions#new', as: :unauthenticated_root
+    # end
 
     resources :clients do
       get 'bank_statement', to: 'clients#bank_statement'
@@ -35,7 +34,7 @@ Rails.application.routes.draw do
     resources :inventory_items
     resources :transactions
     resources :parties
-
+    root 'devise/sessions#new'
   end
 
 

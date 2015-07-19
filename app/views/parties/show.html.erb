@@ -16,6 +16,7 @@
     TODO: mudar toda essa gambiarra
   -->
   <% customers = [185346, 181572, 250017, 656264, 497037, 386649, 678692, 412838, 9376, 667618] %>
+
   <% customers.each do |c| %>
 
     <% transactions = @party.transactions.where(customer_id: c) %>
@@ -26,9 +27,6 @@
     <% end %>
 
   <% end %>
-
-
-
 
   <dt><strong>Total consumption:</strong></dt>
   <dd><%= @party.transactions.where(customer_id: customers).sum(:value) %></dd>
