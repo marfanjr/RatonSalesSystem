@@ -1,5 +1,6 @@
 class InventoryItemsController < ApplicationController
   before_action :set_inventory_item, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /inventory_items
   # GET /inventory_items.json

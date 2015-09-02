@@ -1,6 +1,6 @@
 class PartiesController < ApplicationController
   before_action :set_party, only: [:show, :edit, :update, :destroy]
-
+  load_and_authorize_resource
   # GET /parties
   # GET /parties.json
   def index

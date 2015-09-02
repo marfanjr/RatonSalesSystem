@@ -2,11 +2,12 @@
 #
 # Table name: parties
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  party_date :date
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id           :integer          not null, primary key
+#  name         :string(255)
+#  party_date   :date
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  ticket_value :decimal(5, 2)    default(0.0)
 #
 
 class Party < ActiveRecord::Base

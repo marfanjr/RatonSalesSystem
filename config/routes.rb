@@ -17,9 +17,6 @@ Rails.application.routes.draw do
     post 'signin' => 'devise/sessions#create', :as => :user_session
     delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
 
-    authenticated :user do
-      root 'transactions#new', as: :authenticated_root
-    end
 
     # unauthenticated do
     #   root 'devise/sessions#new', as: :unauthenticated_root

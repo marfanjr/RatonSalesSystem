@@ -15,15 +15,15 @@
   <!-- 
     TODO: mudar toda essa gambiarra
   -->
-  <% customers = [185346, 181572, 250017, 656264, 497037, 386649, 678692, 412838, 9376, 667618] %>
+  <% customers = User.joins(:profile).where(role: 0).order('profiles.name') %>
 
   <% customers.each do |c| %>
 
     <% transactions = @party.transactions.where(customer_id: c) %>
 
     <% unless transactions.empty? %>
-      <dt><strong><%= transactions.first.customer.profile.name %>:</strong></dt>
-      <dd><%= transactions.sum(:value) %></dd>
+      <dt><strong><%= c.profile.name %>:</strong></dt>
+      <dd><%= c.transactions.sum(:value) %></dd>
     <% end %>
 
   <% end %>

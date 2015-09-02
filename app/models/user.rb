@@ -16,6 +16,7 @@
 #  created_at             :datetime
 #  updated_at             :datetime
 #  profile_id             :integer
+#  role                   :integer
 #
 
 class User < ActiveRecord::Base
@@ -25,7 +26,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :profile, dependent: :destroy
-  has_many :sales
   has_many :transactions, foreign_key: 'employee_id'
   has_many :transactions, foreign_key: 'customer_id'
 
@@ -35,6 +35,8 @@ class User < ActiveRecord::Base
   before_create :randomize_id
 
   before_validation :set_user_email
+
+  enum role: [:employee, :customer]
 
   def email_required?
   	false  	

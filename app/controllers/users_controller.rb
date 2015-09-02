@@ -1,10 +1,16 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy, :bank_statement]
+  load_and_authorize_resource
 
   def index
     @users = User.joins(:profile).order('profiles.name')
-#    if params[:profile_type].presence 
-#    	@users = @users.joins(:profile).where('profiles.profile_type = ?')
+    if params[:role].presence 
+      if params[:role] == 'employee'
+    	  @users = @users.where(role: 0)
+      elsif params[:role] == 'customer'
+        @users = @users.where(role: 1)
+      end
+    end
   end
 
 

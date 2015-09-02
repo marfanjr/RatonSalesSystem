@@ -27,14 +27,34 @@
       <%= error_span(@user.profile[:name]) %>
     </div>
 
-      <div class="form-group">
+    <div class="form-group">
       <%= ff.label :email, :class => 'col-sm-2 control-label' %>
       <div class="col-sm-6">
         <%= ff.text_field :email, :class => 'form-control' %>
       </div>
       <%= error_span(@user.profile[:email]) %>
     </div>
+
+
+    <div class="form-group">
+      <%= f.label :role, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+
+        <%= radio_button_tag(:role, "customer"%>
+        <%= label_tag(:role_customer, "Customer") %>
+        <%= radio_button_tag(:role, "employee") %>
+        <%= label_tag(:age_employee, "Employee") %>
+
+      </div>
+      <%= error_span(@user.profile[:email]) %>
+    </div>
+
+    
   <% end %>
+
+
+
+
 
   <div class="form-group">
       <%= f.label :password, class: "col-sm-2 control-label" %>
