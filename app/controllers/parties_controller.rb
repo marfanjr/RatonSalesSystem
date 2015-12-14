@@ -28,7 +28,7 @@ class PartiesController < ApplicationController
 
     respond_to do |format|
       if @party.save
-        format.html { redirect_to @party, notice: 'Party was successfully created.' }
+        format.html { redirect_to parties_url, notice: 'Party was successfully created.' }
         format.json { render :show, status: :created, location: @party }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PartiesController < ApplicationController
   def update
     respond_to do |format|
       if @party.update(party_params)
-        format.html { redirect_to @party, notice: 'Party was successfully updated.' }
+        format.html { redirect_to parties_url, notice: 'Party was successfully updated.' }
         format.json { render :show, status: :ok, location: @party }
       else
         format.html { render :edit }

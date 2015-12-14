@@ -60,8 +60,12 @@
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-6">
             <%= f.submit nil, :class => 'btn btn-primary' %>
+            <% if @party.id.presence %>
+                <%= link_to "<button class='btn btn-default'> #{InventoryItem.model_name.human(count: 2)}</button>".html_safe, party_inventory_items_path(@party) %>
+            <% end %>
           </div>
         </div>
+
 
       </div>
     </div>

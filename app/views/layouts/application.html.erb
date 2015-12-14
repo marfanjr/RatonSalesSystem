@@ -64,11 +64,7 @@
           <% if can? :read, Party  %>
             <a href="/parties" class="btn btn-default">Parties</a>
           <% end %>
-          
-          <% if can? :read, InventoryItem %>
-            <a href="/inventory_items" class="btn btn-default">Inventory</a>
-          <% end %>
-          
+
           <% if can? :read, Product %>
             <a href="/products" class="btn btn-default">Products</a>
           <% end %>

@@ -19,7 +19,7 @@
   <tbody>
     <% @inventory_items.each do |inventory_item| %>
       <tr>
-        <td><%= link_to inventory_item.product.name, inventory_item_path(inventory_item) %></td>
+        <td><%= link_to inventory_item.product.name, party_inventory_item_path(@party, inventory_item) %></td>
         <td><%= inventory_item.party.name %></td>
         <td><%= inventory_item.amount_purchased %></td>
         <td><%= inventory_item.unit_cost %></td>
@@ -29,9 +29,9 @@
         <td><%=l inventory_item.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_inventory_item_path(inventory_item), :class => 'btn btn-default btn-xs' %>
+                      edit_party_inventory_item_path(@party, inventory_item), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      inventory_item_path(inventory_item),
+                      party_inventory_item_path(@party, inventory_item),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                       :class => 'btn btn-xs btn-danger' %>
@@ -42,5 +42,5 @@
 </table>
 
 <%= link_to t('.new', :default => t("helpers.links.new")),
-            new_inventory_item_path,
+            new_party_inventory_item_path,
             :class => 'btn btn-primary' %>

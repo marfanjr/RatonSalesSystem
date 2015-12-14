@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
 
   resources :users do
-    
+
     member do
       get 'bank_statement' => 'users#bank_statement'
     end
@@ -28,9 +28,10 @@ Rails.application.routes.draw do
     resources :sales
     resources :profiles
     resources :products
-    resources :inventory_items
     resources :transactions
-    resources :parties
+    resources :parties do
+      resources :inventory_items
+    end
     root 'devise/sessions#new'
   end
 

@@ -1,11 +1,13 @@
 class InventoryItemsController < ApplicationController
+  before_action :load_party
   before_action :set_inventory_item, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource
 
   # GET /inventory_items
   # GET /inventory_items.json
   def index
-    @inventory_items = InventoryItem.all
+    # @inventory_items = InventoryItem.all
+    @inventory_items = @resource = @party.inventory_items
   end
 
   # GET /inventory_items/1
@@ -29,7 +31,7 @@ class InventoryItemsController < ApplicationController
 
     respond_to do |format|
       if @inventory_item.save
-        format.html { redirect_to @inventory_item, notice: 'Inventory item was successfully created.' }
+        format.html { redirect_to party_inventory_items_url, notice: 'Inventory item was successfully created.' }
         format.json { render :show, status: :created, location: @inventory_item }
       else
         format.html { render :new }
@@ -43,7 +45,7 @@ class InventoryItemsController < ApplicationController
   def update
     respond_to do |format|
       if @inventory_item.update(inventory_item_params)
-        format.html { redirect_to @inventory_item, notice: 'Inventory item was successfully updated.' }
+        format.html { redirect_to party_inventory_items_url, notice: 'Inventory item was successfully updated.' }
         format.json { render :show, status: :ok, location: @inventory_item }
       else
         format.html { render :edit }
@@ -57,15 +59,20 @@ class InventoryItemsController < ApplicationController
   def destroy
     @inventory_item.destroy
     respond_to do |format|
-      format.html { redirect_to inventory_items_url, notice: 'Inventory item was successfully destroyed.' }
+      format.html { redirect_to party_inventory_items_url, notice: 'Inventory item was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
+
+    def load_party
+      @party = Party.find(params[:party_id])
+    end
+
     def set_inventory_item
-      @inventory_item = InventoryItem.find(params[:id])
+      @inventory_item = @resource = @party.inventory_items.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
