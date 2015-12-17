@@ -28,9 +28,9 @@ Rails.application.routes.draw do
     resources :sales
     resources :profiles
     resources :products
-    resources :transactions
     resources :parties do
       resources :inventory_items
+      resources :transactions
     end
     root 'devise/sessions#new'
   end

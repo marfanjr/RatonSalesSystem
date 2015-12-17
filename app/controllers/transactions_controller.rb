@@ -1,11 +1,13 @@
 class TransactionsController < ApplicationController
+  before_action :load_party
   before_action :set_transaction, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource
+
 
   # GET /transactions
   # GET /transactions.json
   def index
-    @transactions = Transaction.order('created_at')
+    @transactions = @resource = @party.transactions
   end
 
   # GET /transactions/1
@@ -29,7 +31,7 @@ class TransactionsController < ApplicationController
 
     respond_to do |format|
       if @transaction.save
-        format.html { redirect_to @transaction, notice: 'Transaction was successfully created.' }
+        format.html { redirect_to new_party_transaction, notice: 'Transaction was successfully created.' }
         format.json { render :show, status: :created, location: @transaction }
       else
         format.html { render :new }
@@ -43,7 +45,7 @@ class TransactionsController < ApplicationController
   def update
     respond_to do |format|
       if @transaction.update(transaction_params)
-        format.html { redirect_to @transaction, notice: 'Transaction was successfully updated.' }
+        format.html { redirect_to new_party_transaction, notice: 'Transaction was successfully updated.' }
         format.json { render :show, status: :ok, location: @transaction }
       else
         format.html { render :edit }
@@ -57,13 +59,17 @@ class TransactionsController < ApplicationController
   def destroy
     @transaction.destroy
     respond_to do |format|
-      format.html { redirect_to transactions_url, notice: 'Transaction was successfully destroyed.' }
+      format.html { redirect_to new_party_transaction, notice: 'Transaction was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    def load_party
+      @party = Party.find(params[:party_id])
+    end
+
+  # Use callbacks to share common setup or constraints between actions.
     def set_transaction
       @transaction = Transaction.find(params[:id])
     end

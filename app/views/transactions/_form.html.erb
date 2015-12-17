@@ -1,4 +1,4 @@
-<%= form_for @transaction, :html => { :class => "form-horizontal transaction" } do |f| %>
+<%= form_for [@party, @transaction], :html => { :class => "form-horizontal transaction" } do |f| %>
 
   <% if @transaction.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
@@ -45,15 +45,10 @@
           <%= error_span(@transaction[:quantity]) %>
         </div>
 
-        <div class="form-group">
-          <%= f.label :party_id, class: 'col-sm-2 control-label' %>
-          <div class="col-sm-6">
 
-            <%= collection_select( :transaction, :party_id, Party.order(party_date: :asc), :id, :name, { :multiple => false }, {class: "form-control"})%>
+        <!--TODO: Pesquisar maneira mais elegante de passar o id da festa no objeto-->
+        <%= f.hidden_field :party_id, :value => @party.id %>
 
-          </div>
-          <%= error_span(@transaction[:party_id]) %>
-        </div>
 
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-6">
