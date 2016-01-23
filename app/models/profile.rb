@@ -30,6 +30,8 @@ class Profile < ActiveRecord::Base
 		self.name = self.name.split.map(&:capitalize).join(' ')
 	end
 
-
+   def customer_id
+   	 self.try(:user).try(:id)
+   end
 end
 

@@ -1,5 +1,6 @@
 class TransactionsController < ApplicationController
   before_action :load_party
+  before_action :load_products
   before_action :set_transaction, only: [:show, :edit, :update, :destroy]
   load_and_authorize_resource
 
@@ -31,7 +32,7 @@ class TransactionsController < ApplicationController
 
     respond_to do |format|
       if @transaction.save
-        format.html { redirect_to new_party_transaction, notice: 'Transaction was successfully created.' }
+        format.html { redirect_to new_party_transaction_url, notice: 'Transaction was successfully created.' }
         format.json { render :show, status: :created, location: @transaction }
       else
         format.html { render :new }
@@ -59,7 +60,7 @@ class TransactionsController < ApplicationController
   def destroy
     @transaction.destroy
     respond_to do |format|
-      format.html { redirect_to new_party_transaction, notice: 'Transaction was successfully destroyed.' }
+      format.html { redirect_to bank_statement_user_url(@transaction.customer_id), notice: 'Transaction was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -67,6 +68,12 @@ class TransactionsController < ApplicationController
   private
     def load_party
       @party = Party.find(params[:party_id])
+      @product_ids = InventoryItem.includes(:product).where(party_id: params[:party_id]).pluck(:product_id)
+    end
+
+    def load_products
+      product_ids = InventoryItem.includes(:product).where(party_id: params[:party_id]).pluck(:product_id)
+      @products = Product.find(product_ids)
     end
 
   # Use callbacks to share common setup or constraints between actions.

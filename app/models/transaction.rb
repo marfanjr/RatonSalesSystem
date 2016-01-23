@@ -21,6 +21,8 @@ class Transaction < ActiveRecord::Base
   belongs_to :product
   belongs_to :party
 
+  validates :quantity, presence:true
+  
   before_validation :set_employee
   before_validation :set_transaction_attributes
   before_validation :update_inventory_item

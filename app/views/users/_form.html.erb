@@ -35,24 +35,21 @@
       <%= error_span(@user.profile[:email]) %>
     </div>
 
+  <% end %>
+
 
     <div class="form-group">
       <%= f.label :role, :class => 'col-sm-2 control-label' %>
       <div class="col-sm-6">
 
-        <%= radio_button_tag(:role, "customer"%>
+        <%= f.radio_button(:role, "customer")%>
         <%= label_tag(:role_customer, "Customer") %>
-        <%= radio_button_tag(:role, "employee") %>
+        <%= f.radio_button(:role, "employee") %>
         <%= label_tag(:age_employee, "Employee") %>
 
       </div>
       <%= error_span(@user.profile[:email]) %>
     </div>
-
-    
-  <% end %>
-
-
 
 
 

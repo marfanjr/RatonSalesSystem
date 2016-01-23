@@ -46,13 +46,13 @@
           <%= error_span(@inventory_item[:unit_cost]) %>
         </div>
 
-        <div class="form-group">
+<!--         <div class="form-group">
           <%= f.label "Profit Margin (%)", :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
             <%= f.number_field :profit_margin, :class => 'form-control' %>
           </div>
           <%= error_span(@inventory_item[:profit_margin]) %>
-        </div>
+        </div> -->
 
         <!--TODO: Pesquisar maneira mais elegante de passar o id da festa no objeto-->
         <%= f.hidden_field :party_id, :value => @party.id %>
