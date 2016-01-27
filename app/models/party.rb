@@ -2,15 +2,16 @@
 #
 # Table name: parties
 #
-#  id         :integer          not null, primary key
-#  name       :string(255)
-#  party_date :date
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id           :integer          not null, primary key
+#  name         :string(255)
+#  party_date   :date
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  ticket_value :decimal(5, 2)    default(0.0)
 #
 
 class Party < ActiveRecord::Base
   has_many :inventory_items
   has_many :transactions
-  has_and_belongs_to_many :guests, join_table: "guests_parties", association_foreign_key: 'guest_id', class_name: "User"
+  # has_and_belongs_to_many :guests, join_table: "guests_parties", association_foreign_key: 'guest_id', class_name: "User"
 end

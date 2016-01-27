@@ -1,4 +1,7 @@
-<%= form_for @transaction, :html => { :class => "form-horizontal transaction" } do |f| %>
+<!-- TODO: melhorar esse alerta -->
+<%= flash[:notice].html_safe unless flash[:notice].blank? %>
+
+<%= form_for [@party, @transaction], :html => { :class => "form-horizontal transaction" } do |f| %>
 
   <% if @transaction.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
@@ -18,6 +21,7 @@
   <div class="container">
     <div class="navbar-body">
       <div class="jumbotron">
+<!--
 
         <div class="form-group">
           <%= f.label "Customer Id", :class => 'col-sm-2 control-label' %>
@@ -26,12 +30,24 @@
           </div>
           <%= error_span(@transaction[:customer_id]) %>
         </div>
+-->
+
+        <div class="form-group">
+          <%= f.label :customer_id, class: 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
+
+            <%= collection_select( :transaction, :customer_id, Profile.includes(:user).order(:name), :customer_id, :name, { :multiple => false }, {class: "form-control"})%>
+
+          </div>
+          <%= error_span(@transaction[:customer_id]) %>
+        </div>
+
 
         <div class="form-group">
           <%= f.label :product_id, class: 'col-sm-2 control-label' %>
           <div class="col-sm-6">
 
-            <%= collection_select( :transaction, :product_id, Product.all, :id, :name_price, { :multiple => false }, {class: "form-control"})%>
+            <%= collection_select( :transaction, :product_id, @products, :id, :name_price, { :multiple => false }, {class: "form-control"})%>
 
           </div>
           <%= error_span(@transaction[:product_id]) %>
@@ -40,20 +56,15 @@
         <div class="form-group">
           <%= f.label :quantity, :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
-            <%= f.number_field :quantity, :class => 'form-control' %>
+            <%= f.number_field :quantity, min:1, value: 1, :class => 'form-control' %>
           </div>
           <%= error_span(@transaction[:quantity]) %>
         </div>
 
-        <div class="form-group">
-          <%= f.label :party_id, class: 'col-sm-2 control-label' %>
-          <div class="col-sm-6">
 
-            <%= collection_select( :transaction, :party_id, Party.order(party_date: :asc), :id, :name, { :multiple => false }, {class: "form-control"})%>
+        <!--TODO: Pesquisar maneira mais elegante de passar o id da festa no objeto-->
+        <%= f.hidden_field :party_id, :value => @party.id %>
 
-          </div>
-          <%= error_span(@transaction[:party_id]) %>
-        </div>
 
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-6">

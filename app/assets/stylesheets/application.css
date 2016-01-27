@@ -12,9 +12,8 @@
  *
  *= require_tree .
  *= require_self
-
  *= require selectize
  *= require selectize.default
-
-
+ *= import twitter/bootstrap
+ *= import twitter/bootstrap-responsive
  */

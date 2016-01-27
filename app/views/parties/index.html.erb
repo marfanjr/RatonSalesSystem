@@ -22,6 +22,8 @@
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_party_path(party), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.edit', :default => 'sell'),
+                      new_party_transaction_path(party), :class => 'btn btn-default btn-xs' %>
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       party_path(party),
                       :method => :delete,

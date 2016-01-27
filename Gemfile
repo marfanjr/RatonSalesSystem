@@ -10,11 +10,11 @@ gem 'mysql2', '~> 0.3.18'
 
 gem 'awesome_print', group: :development
 
-gem "selectize-rails"
+gem 'selectize-rails'
 
-gem "therubyracer"
-gem "less-rails"
-gem "twitter-bootstrap-rails"
+gem 'therubyracer'
+# gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

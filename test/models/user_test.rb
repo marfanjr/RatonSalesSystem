@@ -16,6 +16,7 @@
 #  created_at             :datetime
 #  updated_at             :datetime
 #  profile_id             :integer
+#  role                   :integer
 #
 
 require 'test_helper'

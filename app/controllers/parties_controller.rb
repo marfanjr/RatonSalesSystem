@@ -1,6 +1,6 @@
 class PartiesController < ApplicationController
   before_action :set_party, only: [:show, :edit, :update, :destroy]
-
+  load_and_authorize_resource
   # GET /parties
   # GET /parties.json
   def index
@@ -28,7 +28,7 @@ class PartiesController < ApplicationController
 
     respond_to do |format|
       if @party.save
-        format.html { redirect_to @party, notice: 'Party was successfully created.' }
+        format.html { redirect_to parties_url, notice: 'Party was successfully created.' }
         format.json { render :show, status: :created, location: @party }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class PartiesController < ApplicationController
   def update
     respond_to do |format|
       if @party.update(party_params)
-        format.html { redirect_to @party, notice: 'Party was successfully updated.' }
+        format.html { redirect_to parties_url, notice: 'Party was successfully updated.' }
         format.json { render :show, status: :ok, location: @party }
       else
         format.html { render :edit }
@@ -69,6 +69,6 @@ class PartiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def party_params
-      params.require(:party).permit(:name, :party_date)
+      params.require(:party).permit(:name, :party_date, :ticket_value)
     end
 end

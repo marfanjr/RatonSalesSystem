@@ -57,17 +57,28 @@
             </ul>
           </div>
             -->
+<!--           <% if can? :read, Transaction %>
+            <a href="/transactions/new" class="btn btn-default">Transactions</a>
+          <% end %> -->
           
-          <a href="/transactions/new" class="btn btn-default">Transactions</a>
-          <a href="/parties" class="btn btn-default">Parties</a>
-          <a href="/inventory_items" class="btn btn-default">Inventory</a>
-          <a href="/products" class="btn btn-default">Products</a>
-          <a href="/users" class="btn btn-default">Users(customer and employee)</a>
+          <% if can? :read, Party  %>
+            <a href="/parties" class="btn btn-default">Parties</a>
+          <% end %>
+
+          <% if can? :read, Product %>
+            <a href="/products" class="btn btn-default">Products</a>
+          <% end %>
+
+          <% if can? :read, User %>
+            <a href="/users?role=employee" class="btn btn-default">Employee</a>
+          <% end %>
+          
+          <% if can? :read, User %>
+            <a href="/users?role=customer" class="btn btn-default">Customers</a>
+          <% end %>
 
           <% if user_signed_in? %>
-            <a href="/signout" data-method="delete" class="btn btn-default">Logout</a>
-          <% else %>
-            <a href="/signin" data-method="delete" class="btn btn-default">Login</a>
+            <a href="/signout" data-method="delete" class="btn btn-default"> <%= current_user.profile.name %> - Logout</a>
           <% end %>
 
         </div>

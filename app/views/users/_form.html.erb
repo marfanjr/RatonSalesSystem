@@ -1,6 +1,6 @@
 <%= form_for @user, :html => { :class => "form-horizontal user" } do |f| %>
 
-    <% if @user.errors.any? %>
+  <% if @user.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
       <div class="panel-heading">
         <h3 class="panel-title"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h3>
@@ -15,76 +15,58 @@
     </div>
   <% end %>
 
-  <div class="control-group">
-    <%= f.label :email, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :email, :class => 'form-control' %>
+  <% @user.build_profile %>
+  
+  <%= f.fields_for :profile, @user.profile do |ff| %>
+
+    <div class="form-group">
+      <%= ff.label :name, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :name, :class => 'form-control' %>
+      </div>
+      <%= error_span(@user.profile[:name]) %>
     </div>
-    <%= error_span(@user[:email]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :encrypted_password, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :encrypted_password, :class => 'form-control' %>
+
+    <div class="form-group">
+      <%= ff.label :email, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+        <%= ff.text_field :email, :class => 'form-control' %>
+      </div>
+      <%= error_span(@user.profile[:email]) %>
     </div>
-    <%= error_span(@user[:encrypted_password]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :reset_password_token, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :reset_password_token, :class => 'form-control' %>
+
+  <% end %>
+
+
+    <div class="form-group">
+      <%= f.label :role, :class => 'col-sm-2 control-label' %>
+      <div class="col-sm-6">
+
+        <%= f.radio_button(:role, "customer")%>
+        <%= label_tag(:role_customer, "Customer") %>
+        <%= f.radio_button(:role, "employee") %>
+        <%= label_tag(:age_employee, "Employee") %>
+
+      </div>
+      <%= error_span(@user.profile[:email]) %>
     </div>
-    <%= error_span(@user[:reset_password_token]) %>
+
+
+
+  <div class="form-group">
+      <%= f.label :password, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
   </div>
-  <div class="control-group">
-    <%= f.label :reset_password_sent_at, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :reset_password_sent_at, :class => 'form-control' %>
-    </div>
-    <%= error_span(@user[:reset_password_sent_at]) %>
+
+  <div class="form-group">
+      <%= f.label :password_confirmation, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+      </div>
   </div>
-  <div class="control-group">
-    <%= f.label :remember_created_at, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :remember_created_at, :class => 'form-control' %>
-    </div>
-    <%= error_span(@user[:remember_created_at]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :current_sign_in_at, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :current_sign_in_at, :class => 'form-control' %>
-    </div>
-    <%= error_span(@user[:current_sign_in_at]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :last_sign_in_at, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :last_sign_in_at, :class => 'form-control' %>
-    </div>
-    <%= error_span(@user[:last_sign_in_at]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :current_sign_in_ip, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :current_sign_in_ip, :class => 'form-control' %>
-    </div>
-    <%= error_span(@user[:current_sign_in_ip]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :last_sign_in_ip, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :last_sign_in_ip, :class => 'form-control' %>
-    </div>
-    <%= error_span(@user[:last_sign_in_ip]) %>
-  </div>
-  <div class="control-group">
-    <%= f.label :profile_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :profile_id, :class => 'form-control' %>
-    </div>
-    <%= error_span(@user[:profile_id]) %>
-  </div>
+
 
 
   <%= f.submit nil, :class => 'btn btn-primary' %>

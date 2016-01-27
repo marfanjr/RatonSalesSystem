@@ -11,8 +11,12 @@ class ApplicationController < ActionController::Base
 
 
 
-
   protected
+  
+  def after_sign_in_path_for(resource)
+   # After you enter login info and click submit, I want you to be sent to the registrations#show page
+   profile_path(resource.profile_id)
+  end
 
   def get_session_user
     SessionGateway.user = current_user    
@@ -24,7 +28,6 @@ class ApplicationController < ActionController::Base
 
   def layout_by_resource
     if devise_controller?
-      puts "iu"
       "devise/layouts/application"
     else
       "application"

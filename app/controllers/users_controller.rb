@@ -1,10 +1,16 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy, :bank_statement]
+  load_and_authorize_resource
 
   def index
     @users = User.joins(:profile).order('profiles.name')
-#    if params[:profile_type].presence 
-#    	@users = @users.joins(:profile).where('profiles.profile_type = ?')
+    if params[:role].presence 
+      if params[:role] == 'employee'
+    	  @users = @users.where(role: 0)
+      elsif params[:role] == 'customer'
+        @users = @users.where(role: 1)
+      end
+    end
   end
 
 
@@ -63,9 +69,8 @@ class UsersController < ApplicationController
   end
 
   def bank_statement
-    @user
-
     @shopping = Transaction.where(customer_id: params[:id])
+    
     respond_to do |format|
       format.html { render :bank_statement }
       format.json { render json: @shopping}
@@ -80,8 +85,7 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit()
+      params.require(:user).permit(:password, :password_confirmation, :current_password, :role, {profile_attributes: [:id, :name, :cpf, :rg, :telephone, :cell_phone, :email, :credits]})
     end
-
 
 end

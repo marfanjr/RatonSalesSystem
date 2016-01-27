@@ -26,12 +26,12 @@ class Profile < ActiveRecord::Base
 	# validates :rg, uniqueness: true
 	before_validation :capitalize_name
 
-	enum profile_type: [:employee, :customer]
-
 	def capitalize_name
 		self.name = self.name.split.map(&:capitalize).join(' ')
 	end
 
-
+   def customer_id
+   	 self.try(:user).try(:id)
+   end
 end
 

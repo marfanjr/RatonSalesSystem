@@ -19,9 +19,13 @@ class InventoryItem < ActiveRecord::Base
   belongs_to :product
   belongs_to :party
 
-  # before_validation :set_msrp
-  # before_validation :set_total_cost
+  # after_save :set_msrp
+  # after_save :set_profit_margin
+  before_save :set_total_cost
 
+  def set_profit_margin
+    self.profit_margin = ((self.product.price/self.unit_cost) - 1)*100
+  end
 
   def set_msrp
   	self.product.price = self.unit_cost + (self.unit_cost * profit_margin)/100
@@ -31,7 +35,7 @@ class InventoryItem < ActiveRecord::Base
   end
 
   def set_total_cost
-	self.total_cost = self.unit_cost*self.amount_purchased		
+	  self.total_cost = self.unit_cost*self.amount_purchased
   end
 
 end
