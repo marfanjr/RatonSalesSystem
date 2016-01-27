@@ -6,7 +6,4 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
-@import "twitter/bootstrap/bootstrap";
-
-
-@import "twitter/bootstrap/responsive";
+@import "twitter/bootstrap";
