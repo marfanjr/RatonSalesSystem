@@ -16,5 +16,5 @@
  *= require selectize
  *= require selectize.default
 
- //= require bootstrap
+ *= require bootstrap
 
