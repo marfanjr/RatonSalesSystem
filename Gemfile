@@ -6,15 +6,15 @@ gem 'annotate'
 
 gem 'cancancan', '~> 1.10'
 
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.10'
 
 gem 'awesome_print', group: :development
 
-gem "selectize-rails"
+gem 'selectize-rails'
 
-gem "therubyracer"
-gem "less-rails"
-gem "twitter-bootstrap-rails"
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
