@@ -33,7 +33,6 @@ unless User.exists?(email: "marfanj@gmail.com")
   User.create(email: "marfanj@gmail.com",
               password: 'admin1234',
               password_confirmation: 'admin1234',
-              confirmed_at: Time.now,
               profile_attributes: {
                      name: "Marfan",
                      telephone: "(41)98661559",
