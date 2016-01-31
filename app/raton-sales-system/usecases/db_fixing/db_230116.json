@@ -335,8 +335,6 @@ Sale
 ###
 Transaction
 {"id":1,"employee_id":412838,"customer_id":386649,"party_id":1,"quantity":"1.0","value":"2.5","created_at":"2015-07-04T18:02:03.000Z","updated_at":"2015-07-04T18:02:03.000Z","product_id":3,"product_name":"Cerveja Promoção","product_price":"2.5"}
-{"id":7,"employee_id":412838,"customer_id":412838,"party_id":1,"quantity":"1.0","value":"6.0","created_at":"2015-07-04T19:06:51.000Z","updated_at":"2015-07-04T19:06:51.000Z","product_id":4,"product_name":"Psychobeer","product_price":"6.0"}
-{"id":2,"employee_id":412838,"customer_id":386649,"party_id":1,"quantity":"1.0","value":"6.0","created_at":"2015-07-04T18:59:20.000Z","updated_at":"2015-07-04T18:59:20.000Z","product_id":4,"product_name":"Psychobeer","product_price":"6.0"}
 {"id":6,"employee_id":412838,"customer_id":412838,"party_id":1,"quantity":"1.0","value":"3.0","created_at":"2015-07-04T19:06:35.000Z","updated_at":"2015-07-04T19:06:35.000Z","product_id":1,"product_name":"Cerveja","product_price":"3.0"}
 {"id":10,"employee_id":412838,"customer_id":678692,"party_id":1,"quantity":"1.0","value":"6.0","created_at":"2015-07-04T19:15:37.000Z","updated_at":"2015-07-04T19:15:37.000Z","product_id":9,"product_name":"Psychobeer","product_price":"6.0"}
 {"id":11,"employee_id":412838,"customer_id":9376,"party_id":1,"quantity":"1.0","value":"6.0","created_at":"2015-07-04T19:16:49.000Z","updated_at":"2015-07-04T19:16:49.000Z","product_id":9,"product_name":"Psychobeer","product_price":"6.0"}
