@@ -31,8 +31,8 @@ class Transaction < ActiveRecord::Base
   before_destroy :reverse_inventory_item
 
   def set_transaction_attributes
-    self.product_name = product.name
-    self.product_price = product.price
+    self.product_name = self.product.name
+    self.product_price = self.product.price
     self.value = self.quantity * self.product.price
   end
 

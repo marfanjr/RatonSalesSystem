@@ -28,17 +28,20 @@
 #                      credits: 25
 #                    })
 # end
+#
+# unless User.exists?(email: "marfanj@gmail.com")
+#   User.create(email: "marfanj@gmail.com",
+#               password: 'admin1234',
+#               password_confirmation: 'admin1234',
+#               role: 0,
+#               profile_attributes: {
+#                      name: "Marfan",
+#                      telephone: "(41)98661559",
+#                      cell_phone: "(41)98661559",
+#                      email: "marfanj@gmail.com",
+#                      credits: 25
+#               })
+# end
 
-unless User.exists?(email: "marfanj@gmail.com")
-  User.create(email: "marfanj@gmail.com",
-              password: 'admin1234',
-              password_confirmation: 'admin1234',
-              role: 0,
-              profile_attributes: {
-                     name: "Marfan",
-                     telephone: "(41)98661559",
-                     cell_phone: "(41)98661559",
-                     email: "marfanj@gmail.com",
-                     credits: 25
-              })
-end
+usecase = DbFixing.new
+usecase.post_db("db_230116.json")
