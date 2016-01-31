@@ -48,8 +48,23 @@ class DbFixing
     db.each do |data|
       model = data[:model].constantize
       data[:data].each do |object|
+
         object = JSON.parse object
-        model.create(object)
+        new_object = model.new(object)
+        saved = new_object.save!
+
+        if Rails.env == "development"
+          puts "=======================================".green
+          puts "Saving a #{model}".green
+
+          if model.to_s == "Transaction"
+            puts "employee_id: #{new[:employee_id]}"
+          end
+
+          puts "saved? #{saved}"
+          puts "=======================================".green
+        end
+
       end
     end
   end
