@@ -22,13 +22,13 @@ class Transaction < ActiveRecord::Base
   belongs_to :party
 
   validates :quantity, presence:true
-  
-  before_validation :set_employee
-  before_validation :set_transaction_attributes
-  before_validation :update_inventory_item
-  before_validation :cash_customer_credits
-  before_destroy :reverse_customer_credits
-  before_destroy :reverse_inventory_item
+
+  # after_save :set_employee
+  # after_save :set_transaction_attributes
+  # after_save :update_inventory_item
+  # after_save :cash_customer_credits
+  # after_destroy :reverse_customer_credits
+  # after_destroy :reverse_inventory_item
 
   def set_transaction_attributes
     self.product_name = self.product.name

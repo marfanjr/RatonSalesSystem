@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
   accepts_nested_attributes_for :profile
 
 
-  before_create :randomize_id
+  # before_create :randomize_id
 
   before_validation :set_user_email
 
