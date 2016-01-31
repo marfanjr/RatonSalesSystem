@@ -25,7 +25,8 @@ module RatonSalesSystem
 
 
     config.autoload_paths += %W(
-      #{config.root}/app/raton-sales-system/usecases
+      #{config.root}/app/raton-sales-system/usecases/db_fixing/
+      #{config.root}/app/raton-sales-system/usecases/
       #{config.root}/app/raton-sales-system/gateways
       #{config.root}/app/helpers
     )
