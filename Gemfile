@@ -7,6 +7,7 @@ gem 'annotate'
 gem 'cancancan', '~> 1.10'
 
 # gem 'mysql2', '~> 0.3.18'
+
 gem 'pg'
 
 gem 'awesome_print', group: :development
