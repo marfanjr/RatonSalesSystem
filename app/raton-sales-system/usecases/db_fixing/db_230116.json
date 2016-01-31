@@ -3,8 +3,6 @@ Party
 {"id":2,"name":"Festa racional vol 3","party_date":"2015-12-20","created_at":"2015-12-17T19:11:16.000Z","updated_at":"2015-12-20T04:48:36.000Z","ticket_value":"5.0"}
 ###
 Profile
-{"id":1,"name":"Cliente 1","cpf":"123456","rg":"123456","telephone":"123456","cell_phone":"123456","email":"cliente1@gmail.com","credits":"20.0","created_at":"2015-07-04T16:21:32.000Z","updated_at":"2015-07-04T16:21:32.000Z","profile_type":nil}
-{"id":2,"name":"Cliente 2","cpf":"0123456","rg":"0123456","telephone":"0123456","cell_phone":"0123456","email":"cliente2@gmail.com","credits":"25.0","created_at":"2015-07-04T16:21:32.000Z","updated_at":"2015-07-04T16:21:32.000Z","profile_type":nil}
 {"id":3,"name":"Juliano Farias","cpf":"","rg":"","telephone":"","cell_phone":"","email":"julianofariasdossantos@gmail.com","credits":"24.0","created_at":"2015-07-04T17:17:38.000Z","updated_at":"2015-12-20T05:55:10.000Z","profile_type":nil}
 {"id":4,"name":"Marfan Fragoso Veras Junior","cpf":"","rg":"","telephone":"","cell_phone":"4198661559","email":"marfanj@gmail.com","credits":"400.2","created_at":"2015-07-04T17:18:04.000Z","updated_at":"2015-12-20T04:16:41.000Z","profile_type":nil}
 {"id":5,"name":"Marcelo Pinhel","cpf":"","rg":"","telephone":"","cell_phone":"","email":"marcelo.pinhel91@gmail.com","credits":"21.0","created_at":"2015-07-04T17:18:41.000Z","updated_at":"2015-12-20T02:40:09.000Z","profile_type":nil}
@@ -155,154 +153,154 @@ Profile
 {"id":151,"name":"Marcel","cpf":"","rg":"","telephone":"","cell_phone":"","email":"sss@sss.com","credits":"0.0","created_at":"2015-12-20T03:36:46.000Z","updated_at":"2015-12-20T03:37:36.000Z","profile_type":nil}
 ###
 User
-{"id":3510,"email":"arnaldojr10@live.com","created_at":"2015-12-19T21:55:25.000Z","updated_at":"2015-12-19T21:55:25.000Z","profile_id":128,"role":"customer"}
-{"id":9376,"email":"raissa0y@gmail.com","created_at":"2015-07-04T17:20:59.000Z","updated_at":"2015-12-20T02:29:56.000Z","profile_id":7,"role":"employee"}
-{"id":12866,"email":"qu3ops@gmail.com","created_at":"2015-12-20T01:01:10.000Z","updated_at":"2015-12-20T01:01:10.000Z","profile_id":145,"role":"customer"}
-{"id":19085,"email":"jcaccere@gmail.com","created_at":"2015-07-05T00:59:57.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":97,"role":"customer"}
-{"id":24206,"email":"t5@gmail.com","created_at":"2015-12-19T21:13:58.000Z","updated_at":"2015-12-19T21:13:58.000Z","profile_id":120,"role":nil}
-{"id":38800,"email":"hb@ns.com","created_at":"2015-12-19T22:36:15.000Z","updated_at":"2015-12-19T22:36:15.000Z","profile_id":135,"role":"customer"}
-{"id":40001,"email":"aniceto.francine@gmail.com","created_at":"2015-07-04T20:43:48.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":36,"role":"customer"}
-{"id":49256,"email":"ronniedi@mail.com","created_at":"2015-07-05T01:02:09.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":98,"role":"customer"}
-{"id":51238,"email":"emailteste@gmail.com","created_at":"2015-12-19T20:57:14.000Z","updated_at":"2015-12-19T20:57:14.000Z","profile_id":116,"role":nil}
-{"id":60312,"email":"valdecirvjunior@gmail.com","created_at":"2015-07-04T23:38:17.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":82,"role":"customer"}
-{"id":63410,"email":"relsips@outlook.com","created_at":"2015-07-04T19:24:07.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":12,"role":"customer"}
-{"id":65151,"email":"mari.borges22@gmail.com","created_at":"2015-07-05T03:57:41.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":110,"role":"customer"}
-{"id":78804,"email":"andersonkfonseca@hotmail.com","created_at":"2015-07-04T23:14:24.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":74,"role":"customer"}
-{"id":93579,"email":"willianrafaellopes@hotmail.com","created_at":"2015-12-19T21:58:21.000Z","updated_at":"2015-12-19T21:58:21.000Z","profile_id":130,"role":"customer"}
-{"id":94629,"email":"leticiacvieira@gmail.com","created_at":"2015-07-04T21:35:23.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":49,"role":"customer"}
-{"id":98423,"email":"marianaqueirozzb@gmail.com","created_at":"2015-07-04T21:32:08.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":46,"role":"customer"}
-{"id":103145,"email":"micheocastello@hotmi.com","created_at":"2015-07-04T22:29:28.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":66,"role":"customer"}
-{"id":116501,"email":"ll@ns.com","created_at":"2015-12-19T21:57:42.000Z","updated_at":"2015-12-19T21:57:42.000Z","profile_id":129,"role":"customer"}
-{"id":116637,"email":"hn@naosei.com","created_at":"2015-12-19T21:48:22.000Z","updated_at":"2015-12-19T21:48:22.000Z","profile_id":126,"role":"customer"}
-{"id":120880,"email":"milasayuri@hotmail.com","created_at":"2015-07-04T21:24:30.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":43,"role":"customer"}
-{"id":127314,"email":"tutih_cwb@hotmaIil.com","created_at":"2015-07-05T01:38:50.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":101,"role":"customer"}
-{"id":144595,"email":"jardel.f.cunha@gmail.com","created_at":"2015-07-04T20:34:22.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":31,"role":"customer"}
-{"id":147430,"email":"t@teste.com","created_at":"2015-07-24T00:18:23.000Z","updated_at":"2015-07-24T00:18:23.000Z","profile_id":113,"role":nil}
-{"id":151344,"email":"adil.lima@yahoo.com.br","created_at":"2015-07-04T20:39:23.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":34,"role":"customer"}
-{"id":157034,"email":"c.schiow@gmai.com","created_at":"2015-07-04T22:22:18.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":63,"role":"customer"}
-{"id":160423,"email":"felipe.canepa@uol.com.br","created_at":"2015-07-04T21:41:11.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":50,"role":"customer"}
-{"id":165949,"email":"digifarias@hotmail.com","created_at":"2015-07-04T20:26:55.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":26,"role":"customer"}
-{"id":176929,"email":"LETICIA-POWERPUNK@HOTMAIL.COM","created_at":"2015-07-05T02:29:16.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":103,"role":"customer"}
-{"id":181572,"email":"andrepinhel@hotmail.com","created_at":"2015-07-04T17:23:49.000Z","updated_at":"2015-07-19T22:11:26.000Z","profile_id":9,"role":"employee"}
-{"id":185346,"email":"agata_mafra@hotmail.com","created_at":"2015-07-04T22:34:39.000Z","updated_at":"2015-07-19T22:11:26.000Z","profile_id":68,"role":"employee"}
-{"id":206681,"email":"antoniomiranda@ufpr.br","created_at":"2015-07-04T19:41:32.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":19,"role":"customer"}
-{"id":218297,"email":"edumc_23@yahoo.com","created_at":"2015-07-04T20:42:17.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":35,"role":"customer"}
-{"id":228253,"email":"carolseara@hotmai.com","created_at":"2015-07-04T23:35:30.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":81,"role":"customer"}
-{"id":238143,"email":"paulachrisferr@hotmail.com","created_at":"2015-07-05T00:19:37.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":85,"role":"customer"}
-{"id":246542,"email":"marilia.souzabento@gmail.com","created_at":"2015-07-04T23:39:48.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":83,"role":"customer"}
-{"id":249493,"email":"rafaelpbaptista@gmail.com","created_at":"2015-07-04T19:53:48.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":20,"role":"customer"}
-{"id":250017,"email":"caio.bedulli@gmail.com","created_at":"2015-07-04T18:20:56.000Z","updated_at":"2015-07-19T22:11:26.000Z","profile_id":10,"role":"employee"}
-{"id":251754,"email":"pazo_pda@hotmail.cm","created_at":"2015-07-04T22:00:09.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":55,"role":"customer"}
-{"id":259979,"email":"2dsdsa@dskjajdsa.com","created_at":"2015-12-20T02:27:44.000Z","updated_at":"2015-12-20T02:27:44.000Z","profile_id":149,"role":"customer"}
-{"id":260189,"email":"aryadne.louise@hotmail.com","created_at":"2015-07-04T21:06:17.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":40,"role":"customer"}
-{"id":263004,"email":"jehbaptista@gmail.com","created_at":"2015-07-04T22:28:54.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":65,"role":"customer"}
-{"id":263132,"email":"druciaki@gmail.com","created_at":"2015-12-19T19:51:22.000Z","updated_at":"2015-12-19T19:51:22.000Z","profile_id":114,"role":"customer"}
-{"id":263602,"email":"leonardoza08@gmail.com","created_at":"2015-07-04T19:29:31.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":16,"role":"customer"}
-{"id":266397,"email":"tbaptistela@gmail.com","created_at":"2015-07-04T20:31:05.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":28,"role":"customer"}
-{"id":276515,"email":"guigiandoniptu@hotmail.com","created_at":"2015-12-19T23:03:27.000Z","updated_at":"2015-12-19T23:03:27.000Z","profile_id":138,"role":"customer"}
-{"id":278394,"email":"julianayanaguizawa@gmail.com","created_at":"2015-07-04T23:31:46.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":79,"role":"customer"}
-{"id":288422,"email":"rafaelamaina@gmail.com","created_at":"2015-07-04T21:23:24.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":42,"role":"customer"}
-{"id":289982,"email":"flaviovencentinijr@gmail.com","created_at":"2015-07-04T22:48:34.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":70,"role":"customer"}
-{"id":293937,"email":"HUGOPAVAN@GMAIL.COM","created_at":"2015-07-05T02:15:32.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":102,"role":"customer"}
-{"id":301971,"email":"hugodsp@yahoo.com.br","created_at":"2015-07-04T20:58:11.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":38,"role":"customer"}
-{"id":303425,"email":"hemanuelle_barreto@hotmail.com","created_at":"2015-07-05T00:35:27.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":89,"role":"customer"}
-{"id":323644,"email":"cristhiancelensko@hotmail.com","created_at":"2015-07-05T00:39:40.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":91,"role":"customer"}
-{"id":330990,"email":"krol.teixeira@gmail.com","created_at":"2015-07-04T21:52:53.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":54,"role":"customer"}
-{"id":340039,"email":"xxx@xxx.com.br","created_at":"2015-12-20T01:40:59.000Z","updated_at":"2015-12-20T01:40:59.000Z","profile_id":147,"role":"customer"}
-{"id":360603,"email":"mfmaske@gmail.com","created_at":"2015-07-05T00:39:23.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":90,"role":"customer"}
-{"id":362087,"email":"marianakniss@htmail.com","created_at":"2015-07-05T00:43:49.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":94,"role":"customer"}
-{"id":371878,"email":"israel@isr.com","created_at":"2015-12-20T02:46:51.000Z","updated_at":"2015-12-20T02:46:51.000Z","profile_id":150,"role":"customer"}
-{"id":372170,"email":"falecomtassio@gmail.com","created_at":"2015-07-04T20:29:38.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":27,"role":"customer"}
-{"id":380242,"email":"sahdhia@jdjs.com","created_at":"2015-12-20T00:06:34.000Z","updated_at":"2015-12-20T00:06:34.000Z","profile_id":141,"role":"customer"}
-{"id":386649,"email":"julianofariasdossantos@gmail.com","created_at":"2015-07-04T17:17:38.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":3,"role":"employee"}
-{"id":403409,"email":"eder.retka@gmai.com","created_at":"2015-07-04T22:15:01.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":60,"role":"customer"}
-{"id":406779,"email":"pk@ns.com","created_at":"2015-12-19T22:44:59.000Z","updated_at":"2015-12-19T22:44:59.000Z","profile_id":136,"role":"customer"}
-{"id":412838,"email":"marfanj@gmail.com","created_at":"2015-07-04T17:18:04.000Z","updated_at":"2015-12-19T21:01:41.000Z","profile_id":4,"role":"employee"}
-{"id":428386,"email":"antunes.ianka@hotmail.com","created_at":"2015-12-20T00:43:29.000Z","updated_at":"2015-12-20T00:43:29.000Z","profile_id":143,"role":"customer"}
-{"id":432690,"email":"fernando.endo.hirata@gmail.com","created_at":"2015-07-04T21:25:16.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":45,"role":"customer"}
-{"id":444454,"email":"andre_azevedo2005@hotmail.com","created_at":"2015-07-04T22:03:28.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":56,"role":"customer"}
-{"id":444940,"email":"emilinkarinepires@hotmail.com","created_at":"2015-07-04T22:13:47.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":59,"role":"customer"}
-{"id":454170,"email":"paulakcruz@gmail.com","created_at":"2015-07-04T23:03:46.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":72,"role":"customer"}
-{"id":479683,"email":"y-gabi@hotmail.com","created_at":"2015-07-05T03:56:35.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":109,"role":"customer"}
-{"id":480290,"email":"hannahlimae@gmail.com","created_at":"2015-07-05T00:45:10.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":95,"role":"customer"}
-{"id":497037,"email":"felipeasprino@gmail.com","created_at":"2015-07-04T17:22:13.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":8,"role":"employee"}
-{"id":504389,"email":"dailainiaves@hotmai.com","created_at":"2015-07-04T23:22:22.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":76,"role":"customer"}
-{"id":512638,"email":"brunadematos.bruna@gmail.com","created_at":"2015-07-04T22:17:07.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":61,"role":"customer"}
-{"id":522344,"email":"igormenegoto@yahoo.com.br","created_at":"2015-07-04T23:26:46.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":77,"role":"customer"}
-{"id":526803,"email":"ab@ns.com","created_at":"2015-12-19T22:10:26.000Z","updated_at":"2015-12-19T22:10:26.000Z","profile_id":131,"role":"customer"}
-{"id":549996,"email":"raphaeldfmoraes@hotmail.com","created_at":"2015-07-04T21:20:30.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":41,"role":"customer"}
-{"id":551660,"email":"gabriel.delestro@gmail.com","created_at":"2015-07-04T23:06:31.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":73,"role":"customer"}
-{"id":552120,"email":"correa.thyago@icloud.com","created_at":"2015-12-20T01:14:17.000Z","updated_at":"2015-12-20T01:14:17.000Z","profile_id":146,"role":"customer"}
-{"id":552328,"email":"vanessabona31@hotmail.com","created_at":"2015-12-19T21:22:17.000Z","updated_at":"2015-12-19T21:22:17.000Z","profile_id":122,"role":"customer"}
-{"id":555053,"email":"talles.borges92@gmail.com","created_at":"2015-07-05T03:53:15.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":108,"role":"customer"}
-{"id":563076,"email":"casarilgabriel1@gmail.com","created_at":"2015-07-05T00:12:43.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":84,"role":"customer"}
-{"id":566955,"email":"walter_f.braga@hotmai.com","created_at":"2015-07-04T23:30:57.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":78,"role":"customer"}
-{"id":567682,"email":"paulinhocck@hotmail.com","created_at":"2015-07-05T01:09:47.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":99,"role":"customer"}
-{"id":571826,"email":"isadora.t.oiveira@gmai.com","created_at":"2015-07-05T00:41:12.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":92,"role":"customer"}
-{"id":579384,"email":"olivermbatista@gmail.com","created_at":"2015-12-19T20:22:35.000Z","updated_at":"2015-12-19T20:22:35.000Z","profile_id":115,"role":"customer"}
-{"id":581405,"email":"xxx@xxx.com","created_at":"2015-12-19T23:10:30.000Z","updated_at":"2015-12-19T23:10:30.000Z","profile_id":139,"role":"customer"}
-{"id":583074,"email":"stefanibonzanini@gmail.com","created_at":"2015-07-04T20:31:24.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":29,"role":"customer"}
-{"id":583836,"email":"wladimir.87@gmail.com","created_at":"2015-07-05T00:42:39.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":93,"role":"customer"}
-{"id":598049,"email":"aaa@aaa.com","created_at":"2015-12-19T22:27:59.000Z","updated_at":"2015-12-19T22:27:59.000Z","profile_id":133,"role":"customer"}
-{"id":606878,"email":"thiagohamado@gmail.com","created_at":"2015-07-04T22:10:04.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":58,"role":"employee"}
-{"id":607989,"email":"lhs@ns.com","created_at":"2015-12-19T22:25:06.000Z","updated_at":"2015-12-19T22:25:06.000Z","profile_id":132,"role":"customer"}
-{"id":618361,"email":"isabela.gordoli@hotmail.com","created_at":"2015-07-05T02:39:32.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":106,"role":"customer"}
-{"id":623377,"email":"sss@sss.com","created_at":"2015-12-20T03:36:46.000Z","updated_at":"2015-12-20T03:36:46.000Z","profile_id":151,"role":"customer"}
-{"id":624194,"email":"guilherme.krentz@gmail.com","created_at":"2015-12-20T00:49:24.000Z","updated_at":"2015-12-20T00:49:24.000Z","profile_id":144,"role":"customer"}
-{"id":630749,"email":"t_sentone@hotmail.com","created_at":"2015-07-04T20:15:48.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":24,"role":"customer"}
-{"id":638424,"email":"juliane_buhr@hotmail.com","created_at":"2015-07-05T00:22:38.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":87,"role":"customer"}
-{"id":645622,"email":"t6@gmail.com","created_at":"2015-12-19T21:15:19.000Z","updated_at":"2015-12-19T21:15:19.000Z","profile_id":121,"role":"customer"}
-{"id":650123,"email":"jhfco@live.com","created_at":"2015-07-05T00:45:44.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":96,"role":"customer"}
-{"id":650361,"email":"willim@nãosei.com","created_at":"2015-12-19T21:30:33.000Z","updated_at":"2015-12-19T21:30:33.000Z","profile_id":124,"role":"customer"}
-{"id":652382,"email":"mads2k5@gmail.com","created_at":"2015-07-04T19:32:16.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":18,"role":"customer"}
-{"id":653710,"email":"hugojcmatos@gmail.com","created_at":"2015-07-04T22:43:02.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":69,"role":"customer"}
-{"id":656264,"email":"eloise.medice@gmail.com","created_at":"2015-07-04T20:50:30.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":37,"role":"employee"}
-{"id":657513,"email":"horning.walter@gmail.com","created_at":"2015-07-04T19:31:13.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":17,"role":"customer"}
-{"id":667618,"email":"saf.rlouco@gmail.com","created_at":"2015-07-04T17:19:20.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":6,"role":"employee"}
-{"id":668230,"email":"anavitoria@naosei.com","created_at":"2015-12-19T21:40:31.000Z","updated_at":"2015-12-19T21:40:31.000Z","profile_id":125,"role":"customer"}
-{"id":668370,"email":"claudiacsferraz@gmail.com","created_at":"2015-12-19T21:03:48.000Z","updated_at":"2015-12-19T21:03:48.000Z","profile_id":117,"role":"customer"}
-{"id":671217,"email":"genta.guilherme@gmail.com","created_at":"2015-07-05T01:24:37.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":100,"role":"customer"}
-{"id":678692,"email":"marcelo.pinhel91@gmail.com","created_at":"2015-07-04T17:18:41.000Z","updated_at":"2015-12-19T21:04:17.000Z","profile_id":5,"role":"employee"}
-{"id":693465,"email":"souzantero@gmail.com","created_at":"2015-07-04T21:44:17.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":51,"role":"customer"}
-{"id":695697,"email":"alestre@gmail.com","created_at":"2015-07-04T19:25:29.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":13,"role":"customer"}
-{"id":698182,"email":"tst@gmail.com","created_at":"2015-12-19T21:12:21.000Z","updated_at":"2015-12-19T21:12:21.000Z","profile_id":119,"role":nil}
-{"id":699689,"email":"rodrigo@rxdx.com.br","created_at":"2015-07-04T23:35:12.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":80,"role":"customer"}
-{"id":704576,"email":"alangdp@gmail.com","created_at":"2015-07-04T20:35:38.000Z","updated_at":"2015-12-19T16:20:41.000Z","profile_id":32,"role":"customer"}
-{"id":704977,"email":"teste3@gmail.com","created_at":"2015-12-19T21:07:53.000Z","updated_at":"2015-12-19T21:07:53.000Z","profile_id":118,"role":nil}
-{"id":710395,"email":"bele_srocha@hotmail.com","created_at":"2015-07-04T20:12:50.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":22,"role":"customer"}
-{"id":713572,"email":"nicks_nt@hotmail.com","created_at":"2015-12-19T21:24:37.000Z","updated_at":"2015-12-19T21:24:37.000Z","profile_id":123,"role":"customer"}
-{"id":726305,"email":"micwesley@gmail.com","created_at":"2015-07-04T19:29:21.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":15,"role":"customer"}
-{"id":727971,"email":"belmirowitt.n@gmail.com","created_at":"2015-07-04T19:26:22.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":14,"role":"customer"}
-{"id":729616,"email":"ffsilveira10@mail.com","created_at":"2015-07-04T22:59:07.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":71,"role":"customer"}
-{"id":731818,"email":"rafaelawgnr@gmail.com","created_at":"2015-07-04T21:33:05.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":47,"role":"customer"}
-{"id":736192,"email":"jw@ns.com","created_at":"2015-12-19T22:31:49.000Z","updated_at":"2015-12-19T22:31:49.000Z","profile_id":134,"role":"customer"}
-{"id":745393,"email":"caimento@gmai.com","created_at":"2015-07-04T22:27:13.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":64,"role":"customer"}
-{"id":749887,"email":"alessandra.endo@live.com","created_at":"2015-07-04T22:31:03.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":67,"role":"customer"}
-{"id":755481,"email":"maycon95alves@gmail.com","created_at":"2015-07-04T20:25:20.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":25,"role":"customer"}
-{"id":757559,"email":"pedro.ak@gmail.com","created_at":"2015-07-04T20:37:22.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":33,"role":"customer"}
-{"id":768668,"email":"deyddias_fotografias@outlook.com","created_at":"2015-07-05T02:38:05.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":105,"role":"customer"}
-{"id":786884,"email":"alceu.maltacampos@yahoo.com.br","created_at":"2015-07-04T19:19:24.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":11,"role":"customer"}
-{"id":788161,"email":"simon_wong90@hotmail.com","created_at":"2015-07-04T22:07:58.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":57,"role":"customer"}
-{"id":794178,"email":"hector.pessanha@gmail.com","created_at":"2015-07-04T20:11:03.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":21,"role":"customer"}
-{"id":797896,"email":"aisabbenetti@hotmail.com","created_at":"2015-07-04T22:19:13.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":62,"role":"customer"}
-{"id":814900,"email":"suzanemacedo.s@gmai.com","created_at":"2015-07-05T03:59:14.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":111,"role":"customer"}
-{"id":828419,"email":"diogonk@yahoo.com.br","created_at":"2015-07-04T21:05:14.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":39,"role":"customer"}
-{"id":832189,"email":"joaofontanelli@gmail.com","created_at":"2015-07-04T23:18:18.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":75,"role":"customer"}
-{"id":854281,"email":"mahkopp@gmail.com","created_at":"2015-07-04T20:13:54.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":23,"role":"customer"}
-{"id":856155,"email":"2dsds@dsads.com","created_at":"2015-12-19T23:31:32.000Z","updated_at":"2015-12-19T23:31:32.000Z","profile_id":140,"role":"customer"}
-{"id":876915,"email":"brunoargenton@gmail.com","created_at":"2015-07-04T21:34:26.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":48,"role":"customer"}
-{"id":878000,"email":"pati_luque@hotmai.com","created_at":"2015-07-05T00:22:27.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":86,"role":"customer"}
-{"id":882635,"email":"mariio@gmail.com","created_at":"2015-07-05T03:25:26.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":107,"role":"customer"}
-{"id":896063,"email":"gabi_rcruz@hotmail.com","created_at":"2015-07-04T21:25:15.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":44,"role":"customer"}
-{"id":903976,"email":"camis-03@hotmail.com","created_at":"2015-07-04T21:51:51.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":53,"role":"customer"}
-{"id":921349,"email":"ldf@ns.com","created_at":"2015-12-19T21:55:12.000Z","updated_at":"2015-12-19T21:55:12.000Z","profile_id":127,"role":"customer"}
-{"id":925830,"email":"ise.emes@gmai.com","created_at":"2015-07-05T00:28:19.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":88,"role":"customer"}
-{"id":946491,"email":"guilherme.vedf@gmail.com","created_at":"2015-07-05T02:35:20.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":104,"role":"customer"}
-{"id":950446,"email":"2sad@fdf.com","created_at":"2015-12-20T00:22:48.000Z","updated_at":"2015-12-20T00:22:48.000Z","profile_id":142,"role":"customer"}
-{"id":952105,"email":"paulolinzmaia@msn.com","created_at":"2015-07-04T21:46:46.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":52,"role":"customer"}
-{"id":964650,"email":"marcellilarissi@gmail.com","created_at":"2015-07-04T20:32:40.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":30,"role":"customer"}
-{"id":981613,"email":"cg@ns.com","created_at":"2015-12-19T22:59:46.000Z","updated_at":"2015-12-19T22:59:46.000Z","profile_id":137,"role":"customer"}
-{"id":993734,"email":"sasiha@ihsah.com","created_at":"2015-12-20T02:17:47.000Z","updated_at":"2015-12-20T02:17:47.000Z","profile_id":148,"role":"customer"}
+{"id":9376,"password":"admin1234", "password_confirmation":"admin1234","email":"raissa0y@gmail.com","created_at":"2015-07-04T17:20:59.000Z","updated_at":"2015-12-20T02:29:56.000Z","profile_id":7,"role":"employee"}
+{"id":3510,"password":"admin1234", "password_confirmation":"admin1234","email":"arnaldojr10@live.com","created_at":"2015-12-19T21:55:25.000Z","updated_at":"2015-12-19T21:55:25.000Z","profile_id":128,"role":"customer"}
+{"id":12866,"password":"admin1234", "password_confirmation":"admin1234","email":"qu3ops@gmail.com","created_at":"2015-12-20T01:01:10.000Z","updated_at":"2015-12-20T01:01:10.000Z","profile_id":145,"role":"customer"}
+{"id":19085,"password":"admin1234", "password_confirmation":"admin1234","email":"jcaccere@gmail.com","created_at":"2015-07-05T00:59:57.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":97,"role":"customer"}
+{"id":24206,"password":"admin1234", "password_confirmation":"admin1234","email":"t5@gmail.com","created_at":"2015-12-19T21:13:58.000Z","updated_at":"2015-12-19T21:13:58.000Z","profile_id":120,"role":nil}
+{"id":38800,"password":"admin1234", "password_confirmation":"admin1234","email":"hb@ns.com","created_at":"2015-12-19T22:36:15.000Z","updated_at":"2015-12-19T22:36:15.000Z","profile_id":135,"role":"customer"}
+{"id":40001,"password":"admin1234", "password_confirmation":"admin1234","email":"aniceto.francine@gmail.com","created_at":"2015-07-04T20:43:48.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":36,"role":"customer"}
+{"id":49256,"password":"admin1234", "password_confirmation":"admin1234","email":"ronniedi@mail.com","created_at":"2015-07-05T01:02:09.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":98,"role":"customer"}
+{"id":51238,"password":"admin1234", "password_confirmation":"admin1234","email":"emailteste@gmail.com","created_at":"2015-12-19T20:57:14.000Z","updated_at":"2015-12-19T20:57:14.000Z","profile_id":116,"role":nil}
+{"id":60312,"password":"admin1234", "password_confirmation":"admin1234","email":"valdecirvjunior@gmail.com","created_at":"2015-07-04T23:38:17.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":82,"role":"customer"}
+{"id":63410,"password":"admin1234", "password_confirmation":"admin1234","email":"relsips@outlook.com","created_at":"2015-07-04T19:24:07.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":12,"role":"customer"}
+{"id":65151,"password":"admin1234", "password_confirmation":"admin1234","email":"mari.borges22@gmail.com","created_at":"2015-07-05T03:57:41.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":110,"role":"customer"}
+{"id":78804,"password":"admin1234", "password_confirmation":"admin1234","email":"andersonkfonseca@hotmail.com","created_at":"2015-07-04T23:14:24.000Z","updated_at":"2015-07-19T22:14:13.000Z","profile_id":74,"role":"customer"}
+{"id":93579,"password":"admin1234", "password_confirmation":"admin1234","email":"willianrafaellopes@hotmail.com","created_at":"2015-12-19T21:58:21.000Z","updated_at":"2015-12-19T21:58:21.000Z","profile_id":130,"role":"customer"}
+{"id":94629,"password":"admin1234", "password_confirmation":"admin1234","email":"leticiacvieira@gmail.com","created_at":"2015-07-04T21:35:23.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":49,"role":"customer"}
+{"id":98423,"password":"admin1234", "password_confirmation":"admin1234","email":"marianaqueirozzb@gmail.com","created_at":"2015-07-04T21:32:08.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":46,"role":"customer"}
+{"id":103145,"password":"admin1234", "password_confirmation":"admin1234","email":"micheocastello@hotmi.com","created_at":"2015-07-04T22:29:28.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":66,"role":"customer"}
+{"id":116501,"password":"admin1234", "password_confirmation":"admin1234","email":"ll@ns.com","created_at":"2015-12-19T21:57:42.000Z","updated_at":"2015-12-19T21:57:42.000Z","profile_id":129,"role":"customer"}
+{"id":116637,"password":"admin1234", "password_confirmation":"admin1234","email":"hn@naosei.com","created_at":"2015-12-19T21:48:22.000Z","updated_at":"2015-12-19T21:48:22.000Z","profile_id":126,"role":"customer"}
+{"id":120880,"password":"admin1234", "password_confirmation":"admin1234","email":"milasayuri@hotmail.com","created_at":"2015-07-04T21:24:30.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":43,"role":"customer"}
+{"id":127314,"password":"admin1234", "password_confirmation":"admin1234","email":"tutih_cwb@hotmaIil.com","created_at":"2015-07-05T01:38:50.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":101,"role":"customer"}
+{"id":144595,"password":"admin1234", "password_confirmation":"admin1234","email":"jardel.f.cunha@gmail.com","created_at":"2015-07-04T20:34:22.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":31,"role":"customer"}
+{"id":147430,"password":"admin1234", "password_confirmation":"admin1234","email":"t@teste.com","created_at":"2015-07-24T00:18:23.000Z","updated_at":"2015-07-24T00:18:23.000Z","profile_id":113,"role":nil}
+{"id":151344,"password":"admin1234", "password_confirmation":"admin1234","email":"adil.lima@yahoo.com.br","created_at":"2015-07-04T20:39:23.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":34,"role":"customer"}
+{"id":157034,"password":"admin1234", "password_confirmation":"admin1234","email":"c.schiow@gmai.com","created_at":"2015-07-04T22:22:18.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":63,"role":"customer"}
+{"id":160423,"password":"admin1234", "password_confirmation":"admin1234","email":"felipe.canepa@uol.com.br","created_at":"2015-07-04T21:41:11.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":50,"role":"customer"}
+{"id":165949,"password":"admin1234", "password_confirmation":"admin1234","email":"digifarias@hotmail.com","created_at":"2015-07-04T20:26:55.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":26,"role":"customer"}
+{"id":176929,"password":"admin1234", "password_confirmation":"admin1234","email":"LETICIA-POWERPUNK@HOTMAIL.COM","created_at":"2015-07-05T02:29:16.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":103,"role":"customer"}
+{"id":181572,"password":"admin1234", "password_confirmation":"admin1234","email":"andrepinhel@hotmail.com","created_at":"2015-07-04T17:23:49.000Z","updated_at":"2015-07-19T22:11:26.000Z","profile_id":9,"role":"employee"}
+{"id":185346,"password":"admin1234", "password_confirmation":"admin1234","email":"agata_mafra@hotmail.com","created_at":"2015-07-04T22:34:39.000Z","updated_at":"2015-07-19T22:11:26.000Z","profile_id":68,"role":"employee"}
+{"id":206681,"password":"admin1234", "password_confirmation":"admin1234","email":"antoniomiranda@ufpr.br","created_at":"2015-07-04T19:41:32.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":19,"role":"customer"}
+{"id":218297,"password":"admin1234", "password_confirmation":"admin1234","email":"edumc_23@yahoo.com","created_at":"2015-07-04T20:42:17.000Z","updated_at":"2015-07-19T22:14:14.000Z","profile_id":35,"role":"customer"}
+{"id":228253,"password":"admin1234", "password_confirmation":"admin1234","email":"carolseara@hotmai.com","created_at":"2015-07-04T23:35:30.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":81,"role":"customer"}
+{"id":238143,"password":"admin1234", "password_confirmation":"admin1234","email":"paulachrisferr@hotmail.com","created_at":"2015-07-05T00:19:37.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":85,"role":"customer"}
+{"id":246542,"password":"admin1234", "password_confirmation":"admin1234","email":"marilia.souzabento@gmail.com","created_at":"2015-07-04T23:39:48.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":83,"role":"customer"}
+{"id":249493,"password":"admin1234", "password_confirmation":"admin1234","email":"rafaelpbaptista@gmail.com","created_at":"2015-07-04T19:53:48.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":20,"role":"customer"}
+{"id":250017,"password":"admin1234", "password_confirmation":"admin1234","email":"caio.bedulli@gmail.com","created_at":"2015-07-04T18:20:56.000Z","updated_at":"2015-07-19T22:11:26.000Z","profile_id":10,"role":"employee"}
+{"id":251754,"password":"admin1234", "password_confirmation":"admin1234","email":"pazo_pda@hotmail.cm","created_at":"2015-07-04T22:00:09.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":55,"role":"customer"}
+{"id":259979,"password":"admin1234", "password_confirmation":"admin1234","email":"2dsdsa@dskjajdsa.com","created_at":"2015-12-20T02:27:44.000Z","updated_at":"2015-12-20T02:27:44.000Z","profile_id":149,"role":"customer"}
+{"id":260189,"password":"admin1234", "password_confirmation":"admin1234","email":"aryadne.louise@hotmail.com","created_at":"2015-07-04T21:06:17.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":40,"role":"customer"}
+{"id":263004,"password":"admin1234", "password_confirmation":"admin1234","email":"jehbaptista@gmail.com","created_at":"2015-07-04T22:28:54.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":65,"role":"customer"}
+{"id":263132,"password":"admin1234", "password_confirmation":"admin1234","email":"druciaki@gmail.com","created_at":"2015-12-19T19:51:22.000Z","updated_at":"2015-12-19T19:51:22.000Z","profile_id":114,"role":"customer"}
+{"id":263602,"password":"admin1234", "password_confirmation":"admin1234","email":"leonardoza08@gmail.com","created_at":"2015-07-04T19:29:31.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":16,"role":"customer"}
+{"id":266397,"password":"admin1234", "password_confirmation":"admin1234","email":"tbaptistela@gmail.com","created_at":"2015-07-04T20:31:05.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":28,"role":"customer"}
+{"id":276515,"password":"admin1234", "password_confirmation":"admin1234","email":"guigiandoniptu@hotmail.com","created_at":"2015-12-19T23:03:27.000Z","updated_at":"2015-12-19T23:03:27.000Z","profile_id":138,"role":"customer"}
+{"id":278394,"password":"admin1234", "password_confirmation":"admin1234","email":"julianayanaguizawa@gmail.com","created_at":"2015-07-04T23:31:46.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":79,"role":"customer"}
+{"id":288422,"password":"admin1234", "password_confirmation":"admin1234","email":"rafaelamaina@gmail.com","created_at":"2015-07-04T21:23:24.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":42,"role":"customer"}
+{"id":289982,"password":"admin1234", "password_confirmation":"admin1234","email":"flaviovencentinijr@gmail.com","created_at":"2015-07-04T22:48:34.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":70,"role":"customer"}
+{"id":293937,"password":"admin1234", "password_confirmation":"admin1234","email":"HUGOPAVAN@GMAIL.COM","created_at":"2015-07-05T02:15:32.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":102,"role":"customer"}
+{"id":301971,"password":"admin1234", "password_confirmation":"admin1234","email":"hugodsp@yahoo.com.br","created_at":"2015-07-04T20:58:11.000Z","updated_at":"2015-07-19T22:14:15.000Z","profile_id":38,"role":"customer"}
+{"id":303425,"password":"admin1234", "password_confirmation":"admin1234","email":"hemanuelle_barreto@hotmail.com","created_at":"2015-07-05T00:35:27.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":89,"role":"customer"}
+{"id":323644,"password":"admin1234", "password_confirmation":"admin1234","email":"cristhiancelensko@hotmail.com","created_at":"2015-07-05T00:39:40.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":91,"role":"customer"}
+{"id":330990,"password":"admin1234", "password_confirmation":"admin1234","email":"krol.teixeira@gmail.com","created_at":"2015-07-04T21:52:53.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":54,"role":"customer"}
+{"id":340039,"password":"admin1234", "password_confirmation":"admin1234","email":"xxx@xxx.com.br","created_at":"2015-12-20T01:40:59.000Z","updated_at":"2015-12-20T01:40:59.000Z","profile_id":147,"role":"customer"}
+{"id":360603,"password":"admin1234", "password_confirmation":"admin1234","email":"mfmaske@gmail.com","created_at":"2015-07-05T00:39:23.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":90,"role":"customer"}
+{"id":362087,"password":"admin1234", "password_confirmation":"admin1234","email":"marianakniss@htmail.com","created_at":"2015-07-05T00:43:49.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":94,"role":"customer"}
+{"id":371878,"password":"admin1234", "password_confirmation":"admin1234","email":"israel@isr.com","created_at":"2015-12-20T02:46:51.000Z","updated_at":"2015-12-20T02:46:51.000Z","profile_id":150,"role":"customer"}
+{"id":372170,"password":"admin1234", "password_confirmation":"admin1234","email":"falecomtassio@gmail.com","created_at":"2015-07-04T20:29:38.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":27,"role":"customer"}
+{"id":380242,"password":"admin1234", "password_confirmation":"admin1234","email":"sahdhia@jdjs.com","created_at":"2015-12-20T00:06:34.000Z","updated_at":"2015-12-20T00:06:34.000Z","profile_id":141,"role":"customer"}
+{"id":386649,"password":"admin1234", "password_confirmation":"admin1234","email":"julianofariasdossantos@gmail.com","created_at":"2015-07-04T17:17:38.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":3,"role":"employee"}
+{"id":403409,"password":"admin1234", "password_confirmation":"admin1234","email":"eder.retka@gmai.com","created_at":"2015-07-04T22:15:01.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":60,"role":"customer"}
+{"id":406779,"password":"admin1234", "password_confirmation":"admin1234","email":"pk@ns.com","created_at":"2015-12-19T22:44:59.000Z","updated_at":"2015-12-19T22:44:59.000Z","profile_id":136,"role":"customer"}
+{"id":412838,"password":"admin1234", "password_confirmation":"admin1234","email":"marfanj@gmail.com","created_at":"2015-07-04T17:18:04.000Z","updated_at":"2015-12-19T21:01:41.000Z","profile_id":4,"role":"employee"}
+{"id":428386,"password":"admin1234", "password_confirmation":"admin1234","email":"antunes.ianka@hotmail.com","created_at":"2015-12-20T00:43:29.000Z","updated_at":"2015-12-20T00:43:29.000Z","profile_id":143,"role":"customer"}
+{"id":432690,"password":"admin1234", "password_confirmation":"admin1234","email":"fernando.endo.hirata@gmail.com","created_at":"2015-07-04T21:25:16.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":45,"role":"customer"}
+{"id":444454,"password":"admin1234", "password_confirmation":"admin1234","email":"andre_azevedo2005@hotmail.com","created_at":"2015-07-04T22:03:28.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":56,"role":"customer"}
+{"id":444940,"password":"admin1234", "password_confirmation":"admin1234","email":"emilinkarinepires@hotmail.com","created_at":"2015-07-04T22:13:47.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":59,"role":"customer"}
+{"id":454170,"password":"admin1234", "password_confirmation":"admin1234","email":"paulakcruz@gmail.com","created_at":"2015-07-04T23:03:46.000Z","updated_at":"2015-07-19T22:14:16.000Z","profile_id":72,"role":"customer"}
+{"id":479683,"password":"admin1234", "password_confirmation":"admin1234","email":"y-gabi@hotmail.com","created_at":"2015-07-05T03:56:35.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":109,"role":"customer"}
+{"id":480290,"password":"admin1234", "password_confirmation":"admin1234","email":"hannahlimae@gmail.com","created_at":"2015-07-05T00:45:10.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":95,"role":"customer"}
+{"id":497037,"password":"admin1234", "password_confirmation":"admin1234","email":"felipeasprino@gmail.com","created_at":"2015-07-04T17:22:13.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":8,"role":"employee"}
+{"id":504389,"password":"admin1234", "password_confirmation":"admin1234","email":"dailainiaves@hotmai.com","created_at":"2015-07-04T23:22:22.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":76,"role":"customer"}
+{"id":512638,"password":"admin1234", "password_confirmation":"admin1234","email":"brunadematos.bruna@gmail.com","created_at":"2015-07-04T22:17:07.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":61,"role":"customer"}
+{"id":522344,"password":"admin1234", "password_confirmation":"admin1234","email":"igormenegoto@yahoo.com.br","created_at":"2015-07-04T23:26:46.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":77,"role":"customer"}
+{"id":526803,"password":"admin1234", "password_confirmation":"admin1234","email":"ab@ns.com","created_at":"2015-12-19T22:10:26.000Z","updated_at":"2015-12-19T22:10:26.000Z","profile_id":131,"role":"customer"}
+{"id":549996,"password":"admin1234", "password_confirmation":"admin1234","email":"raphaeldfmoraes@hotmail.com","created_at":"2015-07-04T21:20:30.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":41,"role":"customer"}
+{"id":551660,"password":"admin1234", "password_confirmation":"admin1234","email":"gabriel.delestro@gmail.com","created_at":"2015-07-04T23:06:31.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":73,"role":"customer"}
+{"id":552120,"password":"admin1234", "password_confirmation":"admin1234","email":"correa.thyago@icloud.com","created_at":"2015-12-20T01:14:17.000Z","updated_at":"2015-12-20T01:14:17.000Z","profile_id":146,"role":"customer"}
+{"id":552328,"password":"admin1234", "password_confirmation":"admin1234","email":"vanessabona31@hotmail.com","created_at":"2015-12-19T21:22:17.000Z","updated_at":"2015-12-19T21:22:17.000Z","profile_id":122,"role":"customer"}
+{"id":555053,"password":"admin1234", "password_confirmation":"admin1234","email":"talles.borges92@gmail.com","created_at":"2015-07-05T03:53:15.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":108,"role":"customer"}
+{"id":563076,"password":"admin1234", "password_confirmation":"admin1234","email":"casarilgabriel1@gmail.com","created_at":"2015-07-05T00:12:43.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":84,"role":"customer"}
+{"id":566955,"password":"admin1234", "password_confirmation":"admin1234","email":"walter_f.braga@hotmai.com","created_at":"2015-07-04T23:30:57.000Z","updated_at":"2015-07-19T22:14:17.000Z","profile_id":78,"role":"customer"}
+{"id":567682,"password":"admin1234", "password_confirmation":"admin1234","email":"paulinhocck@hotmail.com","created_at":"2015-07-05T01:09:47.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":99,"role":"customer"}
+{"id":571826,"password":"admin1234", "password_confirmation":"admin1234","email":"isadora.t.oiveira@gmai.com","created_at":"2015-07-05T00:41:12.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":92,"role":"customer"}
+{"id":579384,"password":"admin1234", "password_confirmation":"admin1234","email":"olivermbatista@gmail.com","created_at":"2015-12-19T20:22:35.000Z","updated_at":"2015-12-19T20:22:35.000Z","profile_id":115,"role":"customer"}
+{"id":581405,"password":"admin1234", "password_confirmation":"admin1234","email":"xxx@xxx.com","created_at":"2015-12-19T23:10:30.000Z","updated_at":"2015-12-19T23:10:30.000Z","profile_id":139,"role":"customer"}
+{"id":583074,"password":"admin1234", "password_confirmation":"admin1234","email":"stefanibonzanini@gmail.com","created_at":"2015-07-04T20:31:24.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":29,"role":"customer"}
+{"id":583836,"password":"admin1234", "password_confirmation":"admin1234","email":"wladimir.87@gmail.com","created_at":"2015-07-05T00:42:39.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":93,"role":"customer"}
+{"id":598049,"password":"admin1234", "password_confirmation":"admin1234","email":"aaa@aaa.com","created_at":"2015-12-19T22:27:59.000Z","updated_at":"2015-12-19T22:27:59.000Z","profile_id":133,"role":"customer"}
+{"id":606878,"password":"admin1234", "password_confirmation":"admin1234","email":"thiagohamado@gmail.com","created_at":"2015-07-04T22:10:04.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":58,"role":"employee"}
+{"id":607989,"password":"admin1234", "password_confirmation":"admin1234","email":"lhs@ns.com","created_at":"2015-12-19T22:25:06.000Z","updated_at":"2015-12-19T22:25:06.000Z","profile_id":132,"role":"customer"}
+{"id":618361,"password":"admin1234", "password_confirmation":"admin1234","email":"isabela.gordoli@hotmail.com","created_at":"2015-07-05T02:39:32.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":106,"role":"customer"}
+{"id":623377,"password":"admin1234", "password_confirmation":"admin1234","email":"sss@sss.com","created_at":"2015-12-20T03:36:46.000Z","updated_at":"2015-12-20T03:36:46.000Z","profile_id":151,"role":"customer"}
+{"id":624194,"password":"admin1234", "password_confirmation":"admin1234","email":"guilherme.krentz@gmail.com","created_at":"2015-12-20T00:49:24.000Z","updated_at":"2015-12-20T00:49:24.000Z","profile_id":144,"role":"customer"}
+{"id":630749,"password":"admin1234", "password_confirmation":"admin1234","email":"t_sentone@hotmail.com","created_at":"2015-07-04T20:15:48.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":24,"role":"customer"}
+{"id":638424,"password":"admin1234", "password_confirmation":"admin1234","email":"juliane_buhr@hotmail.com","created_at":"2015-07-05T00:22:38.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":87,"role":"customer"}
+{"id":645622,"password":"admin1234", "password_confirmation":"admin1234","email":"t6@gmail.com","created_at":"2015-12-19T21:15:19.000Z","updated_at":"2015-12-19T21:15:19.000Z","profile_id":121,"role":"customer"}
+{"id":650123,"password":"admin1234", "password_confirmation":"admin1234","email":"jhfco@live.com","created_at":"2015-07-05T00:45:44.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":96,"role":"customer"}
+{"id":650361,"password":"admin1234", "password_confirmation":"admin1234","email":"willim@nãosei.com","created_at":"2015-12-19T21:30:33.000Z","updated_at":"2015-12-19T21:30:33.000Z","profile_id":124,"role":"customer"}
+{"id":652382,"password":"admin1234", "password_confirmation":"admin1234","email":"mads2k5@gmail.com","created_at":"2015-07-04T19:32:16.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":18,"role":"customer"}
+{"id":653710,"password":"admin1234", "password_confirmation":"admin1234","email":"hugojcmatos@gmail.com","created_at":"2015-07-04T22:43:02.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":69,"role":"customer"}
+{"id":656264,"password":"admin1234", "password_confirmation":"admin1234","email":"eloise.medice@gmail.com","created_at":"2015-07-04T20:50:30.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":37,"role":"employee"}
+{"id":657513,"password":"admin1234", "password_confirmation":"admin1234","email":"horning.walter@gmail.com","created_at":"2015-07-04T19:31:13.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":17,"role":"customer"}
+{"id":667618,"password":"admin1234", "password_confirmation":"admin1234","email":"saf.rlouco@gmail.com","created_at":"2015-07-04T17:19:20.000Z","updated_at":"2015-07-19T22:11:27.000Z","profile_id":6,"role":"employee"}
+{"id":668230,"password":"admin1234", "password_confirmation":"admin1234","email":"anavitoria@naosei.com","created_at":"2015-12-19T21:40:31.000Z","updated_at":"2015-12-19T21:40:31.000Z","profile_id":125,"role":"customer"}
+{"id":668370,"password":"admin1234", "password_confirmation":"admin1234","email":"claudiacsferraz@gmail.com","created_at":"2015-12-19T21:03:48.000Z","updated_at":"2015-12-19T21:03:48.000Z","profile_id":117,"role":"customer"}
+{"id":671217,"password":"admin1234", "password_confirmation":"admin1234","email":"genta.guilherme@gmail.com","created_at":"2015-07-05T01:24:37.000Z","updated_at":"2015-07-19T22:14:18.000Z","profile_id":100,"role":"customer"}
+{"id":678692,"password":"admin1234", "password_confirmation":"admin1234","email":"marcelo.pinhel91@gmail.com","created_at":"2015-07-04T17:18:41.000Z","updated_at":"2015-12-19T21:04:17.000Z","profile_id":5,"role":"employee"}
+{"id":693465,"password":"admin1234", "password_confirmation":"admin1234","email":"souzantero@gmail.com","created_at":"2015-07-04T21:44:17.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":51,"role":"customer"}
+{"id":695697,"password":"admin1234", "password_confirmation":"admin1234","email":"alestre@gmail.com","created_at":"2015-07-04T19:25:29.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":13,"role":"customer"}
+{"id":698182,"password":"admin1234", "password_confirmation":"admin1234","email":"tst@gmail.com","created_at":"2015-12-19T21:12:21.000Z","updated_at":"2015-12-19T21:12:21.000Z","profile_id":119,"role":nil}
+{"id":699689,"password":"admin1234", "password_confirmation":"admin1234","email":"rodrigo@rxdx.com.br","created_at":"2015-07-04T23:35:12.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":80,"role":"customer"}
+{"id":704576,"password":"admin1234", "password_confirmation":"admin1234","email":"alangdp@gmail.com","created_at":"2015-07-04T20:35:38.000Z","updated_at":"2015-12-19T16:20:41.000Z","profile_id":32,"role":"customer"}
+{"id":704977,"password":"admin1234", "password_confirmation":"admin1234","email":"teste3@gmail.com","created_at":"2015-12-19T21:07:53.000Z","updated_at":"2015-12-19T21:07:53.000Z","profile_id":118,"role":nil}
+{"id":710395,"password":"admin1234", "password_confirmation":"admin1234","email":"bele_srocha@hotmail.com","created_at":"2015-07-04T20:12:50.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":22,"role":"customer"}
+{"id":713572,"password":"admin1234", "password_confirmation":"admin1234","email":"nicks_nt@hotmail.com","created_at":"2015-12-19T21:24:37.000Z","updated_at":"2015-12-19T21:24:37.000Z","profile_id":123,"role":"customer"}
+{"id":726305,"password":"admin1234", "password_confirmation":"admin1234","email":"micwesley@gmail.com","created_at":"2015-07-04T19:29:21.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":15,"role":"customer"}
+{"id":727971,"password":"admin1234", "password_confirmation":"admin1234","email":"belmirowitt.n@gmail.com","created_at":"2015-07-04T19:26:22.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":14,"role":"customer"}
+{"id":729616,"password":"admin1234", "password_confirmation":"admin1234","email":"ffsilveira10@mail.com","created_at":"2015-07-04T22:59:07.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":71,"role":"customer"}
+{"id":731818,"password":"admin1234", "password_confirmation":"admin1234","email":"rafaelawgnr@gmail.com","created_at":"2015-07-04T21:33:05.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":47,"role":"customer"}
+{"id":736192,"password":"admin1234", "password_confirmation":"admin1234","email":"jw@ns.com","created_at":"2015-12-19T22:31:49.000Z","updated_at":"2015-12-19T22:31:49.000Z","profile_id":134,"role":"customer"}
+{"id":745393,"password":"admin1234", "password_confirmation":"admin1234","email":"caimento@gmai.com","created_at":"2015-07-04T22:27:13.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":64,"role":"customer"}
+{"id":749887,"password":"admin1234", "password_confirmation":"admin1234","email":"alessandra.endo@live.com","created_at":"2015-07-04T22:31:03.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":67,"role":"customer"}
+{"id":755481,"password":"admin1234", "password_confirmation":"admin1234","email":"maycon95alves@gmail.com","created_at":"2015-07-04T20:25:20.000Z","updated_at":"2015-07-19T22:14:19.000Z","profile_id":25,"role":"customer"}
+{"id":757559,"password":"admin1234", "password_confirmation":"admin1234","email":"pedro.ak@gmail.com","created_at":"2015-07-04T20:37:22.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":33,"role":"customer"}
+{"id":768668,"password":"admin1234", "password_confirmation":"admin1234","email":"deyddias_fotografias@outlook.com","created_at":"2015-07-05T02:38:05.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":105,"role":"customer"}
+{"id":786884,"password":"admin1234", "password_confirmation":"admin1234","email":"alceu.maltacampos@yahoo.com.br","created_at":"2015-07-04T19:19:24.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":11,"role":"customer"}
+{"id":788161,"password":"admin1234", "password_confirmation":"admin1234","email":"simon_wong90@hotmail.com","created_at":"2015-07-04T22:07:58.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":57,"role":"customer"}
+{"id":794178,"password":"admin1234", "password_confirmation":"admin1234","email":"hector.pessanha@gmail.com","created_at":"2015-07-04T20:11:03.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":21,"role":"customer"}
+{"id":797896,"password":"admin1234", "password_confirmation":"admin1234","email":"aisabbenetti@hotmail.com","created_at":"2015-07-04T22:19:13.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":62,"role":"customer"}
+{"id":814900,"password":"admin1234", "password_confirmation":"admin1234","email":"suzanemacedo.s@gmai.com","created_at":"2015-07-05T03:59:14.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":111,"role":"customer"}
+{"id":828419,"password":"admin1234", "password_confirmation":"admin1234","email":"diogonk@yahoo.com.br","created_at":"2015-07-04T21:05:14.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":39,"role":"customer"}
+{"id":832189,"password":"admin1234", "password_confirmation":"admin1234","email":"joaofontanelli@gmail.com","created_at":"2015-07-04T23:18:18.000Z","updated_at":"2015-07-19T22:14:20.000Z","profile_id":75,"role":"customer"}
+{"id":854281,"password":"admin1234", "password_confirmation":"admin1234","email":"mahkopp@gmail.com","created_at":"2015-07-04T20:13:54.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":23,"role":"customer"}
+{"id":856155,"password":"admin1234", "password_confirmation":"admin1234","email":"2dsds@dsads.com","created_at":"2015-12-19T23:31:32.000Z","updated_at":"2015-12-19T23:31:32.000Z","profile_id":140,"role":"customer"}
+{"id":876915,"password":"admin1234", "password_confirmation":"admin1234","email":"brunoargenton@gmail.com","created_at":"2015-07-04T21:34:26.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":48,"role":"customer"}
+{"id":878000,"password":"admin1234", "password_confirmation":"admin1234","email":"pati_luque@hotmai.com","created_at":"2015-07-05T00:22:27.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":86,"role":"customer"}
+{"id":882635,"password":"admin1234", "password_confirmation":"admin1234","email":"mariio@gmail.com","created_at":"2015-07-05T03:25:26.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":107,"role":"customer"}
+{"id":896063,"password":"admin1234", "password_confirmation":"admin1234","email":"gabi_rcruz@hotmail.com","created_at":"2015-07-04T21:25:15.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":44,"role":"customer"}
+{"id":903976,"password":"admin1234", "password_confirmation":"admin1234","email":"camis-03@hotmail.com","created_at":"2015-07-04T21:51:51.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":53,"role":"customer"}
+{"id":921349,"password":"admin1234", "password_confirmation":"admin1234","email":"ldf@ns.com","created_at":"2015-12-19T21:55:12.000Z","updated_at":"2015-12-19T21:55:12.000Z","profile_id":127,"role":"customer"}
+{"id":925830,"password":"admin1234", "password_confirmation":"admin1234","email":"ise.emes@gmai.com","created_at":"2015-07-05T00:28:19.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":88,"role":"customer"}
+{"id":946491,"password":"admin1234", "password_confirmation":"admin1234","email":"guilherme.vedf@gmail.com","created_at":"2015-07-05T02:35:20.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":104,"role":"customer"}
+{"id":950446,"password":"admin1234", "password_confirmation":"admin1234","email":"2sad@fdf.com","created_at":"2015-12-20T00:22:48.000Z","updated_at":"2015-12-20T00:22:48.000Z","profile_id":142,"role":"customer"}
+{"id":952105,"password":"admin1234", "password_confirmation":"admin1234","email":"paulolinzmaia@msn.com","created_at":"2015-07-04T21:46:46.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":52,"role":"customer"}
+{"id":964650,"password":"admin1234", "password_confirmation":"admin1234","email":"marcellilarissi@gmail.com","created_at":"2015-07-04T20:32:40.000Z","updated_at":"2015-07-19T22:14:21.000Z","profile_id":30,"role":"customer"}
+{"id":981613,"password":"admin1234", "password_confirmation":"admin1234","email":"cg@ns.com","created_at":"2015-12-19T22:59:46.000Z","updated_at":"2015-12-19T22:59:46.000Z","profile_id":137,"role":"customer"}
+{"id":993734,"password":"admin1234", "password_confirmation":"admin1234","email":"sasiha@ihsah.com","created_at":"2015-12-20T02:17:47.000Z","updated_at":"2015-12-20T02:17:47.000Z","profile_id":148,"role":"customer"}
 ###
 Product
 {"id":1,"name":"Cerveja","price":"3.0","description":"Brahma, 350ml","created_at":"2015-07-04T17:32:46.000Z","updated_at":"2015-12-19T15:38:02.000Z"}
@@ -1130,8 +1128,4 @@ Transaction
 {"id":828,"employee_id":678692,"customer_id":788161,"party_id":2,"quantity":"1.0","value":"3.0","created_at":"2015-12-20T04:54:00.000Z","updated_at":"2015-12-20T04:54:00.000Z","product_id":1,"product_name":"Cerveja","product_price":"3.0"}
 {"id":829,"employee_id":678692,"customer_id":832189,"party_id":2,"quantity":"1.0","value":"3.0","created_at":"2015-12-20T05:04:05.000Z","updated_at":"2015-12-20T05:04:05.000Z","product_id":1,"product_name":"Cerveja","product_price":"3.0"}
 {"id":830,"employee_id":678692,"customer_id":386649,"party_id":2,"quantity":"2.0","value":"6.0","created_at":"2015-12-20T05:55:10.000Z","updated_at":"2015-12-20T05:55:10.000Z","product_id":1,"product_name":"Cerveja","product_price":"3.0"}
-###
-Client
-{"id":1,"profile_id":1,"created_at":"2015-07-04T16:21:32.000Z","updated_at":"2015-07-04T16:21:32.000Z"}
-{"id":2,"profile_id":2,"created_at":"2015-07-04T16:21:32.000Z","updated_at":"2015-07-04T16:21:32.000Z"}
 ###
