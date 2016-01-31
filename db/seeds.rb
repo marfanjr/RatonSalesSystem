@@ -44,4 +44,4 @@
 # end
 
 usecase = DbFixing.new
-usecase.post_db("db_230116.json")
+usecase.post_db("db_230116")
