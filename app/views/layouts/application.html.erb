@@ -40,9 +40,7 @@
 
     <header class="navbar navbar-default navbar-static-top" role="banner">
       <div class="container">
-        <div class="navbar-header">
-          <a href="/" class="navbar-brand">Raton Sales System</a>
-        </div>
+
         <div class="btn-group btn-lg" role="group" aria-label="...">
           <!--
           <div class="btn-group" role="group">
@@ -57,28 +55,29 @@
             </ul>
           </div>
             -->
+          <a href="/" class="btn btn-primary">Raton Sales System</a>
 <!--           <% if can? :read, Transaction %>
             <a href="/transactions/new" class="btn btn-default">Transactions</a>
           <% end %> -->
           
           <% if can? :read, Party  %>
-            <a href="/parties" class="btn btn-default">Parties</a>
+            <a href="/parties" class="btn btn-primary">Parties</a>
           <% end %>
 
           <% if can? :read, Product %>
-            <a href="/products" class="btn btn-default">Products</a>
+            <a href="/products" class="btn btn-primary">Products</a>
           <% end %>
 
           <% if can? :read, User %>
-            <a href="/users?role=employee" class="btn btn-default">Employee</a>
+            <a href="/users?role=employee" class="btn btn-primary">Employee</a>
           <% end %>
           
           <% if can? :read, User %>
-            <a href="/users?role=customer" class="btn btn-default">Customers</a>
+            <a href="/users?role=customer" class="btn btn-primary">Customers</a>
           <% end %>
 
           <% if user_signed_in? %>
-            <a href="/signout" data-method="delete" class="btn btn-default"> <%= current_user.profile.name %> - Logout</a>
+            <a href="/signout" data-method="delete" class="btn btn-primary"> <%= current_user.profile.name.partition(" ").first %> - Logout</a>
           <% end %>
 
         </div>
