@@ -24,7 +24,6 @@ module RatonSalesSystem
     config.active_record.raise_in_transactional_callbacks = true
 
 
-    config.assets.initialize_on_precompile = false
 
     config.autoload_paths += %W(
       #{config.root}/app/raton-sales-system/usecases/db_fixing/
