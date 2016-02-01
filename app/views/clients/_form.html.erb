@@ -3,11 +3,11 @@
   <% if @client.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
       <div class="panel-heading">
-        <h3 class="panel-title"><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h3>
+        <h3 class="panel-title"><%= pluralize(errors.count, "error") %> prohibited this client from being saved:</h3>
       </div>
       <div class="panel-body">
         <ul>
-        <% @client.errors.full_messages.each do |msg| %>
+        <% errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
         </ul>
@@ -31,49 +31,49 @@
             <div class="col-sm-6">
               <%= ff.text_field :name, :class => 'form-control' %>
             </div>
-            <%= error_span(@client.profile[:name]) %>
+            <%= ff.error_span(:name) %>
           </div>
           <div class="form-group">
             <%= ff.label :cpf, :class => 'col-sm-2 control-label' %>
             <div class="col-sm-6">
               <%= ff.text_field :cpf, :class => 'form-control' %>
             </div>
-            <%= error_span(@client.profile[:cpf]) %>
+            <%= ff.error_span(:cpf) %>
           </div>
           <div class="form-group">
             <%= ff.label :rg, :class => 'col-sm-2 control-label' %>
             <div class="col-sm-6">
               <%= ff.text_field :rg, :class => 'form-control' %>
             </div>
-            <%= error_span(@client.profile[:rg]) %>
+            <%= ff.error_span(:rg) %>
           </div>
           <div class="form-group">
             <%= ff.label :telephone, :class => 'col-sm-2 control-label' %>
             <div class="col-sm-6">
               <%= ff.text_field :telephone, :class => 'form-control' %>
             </div>
-            <%= error_span(@client.profile[:telephone]) %>
+            <%= ff.error_span(:telephone) %>
           </div>
           <div class="form-group">
             <%= ff.label :cell_phone, :class => 'col-sm-2 control-label' %>
             <div class="col-sm-6">
               <%= ff.text_field :cell_phone, :class => 'form-control' %>
             </div>
-            <%= error_span(@client.profile[:cell_phone]) %>
+            <%= ff.error_span(:cell_phone) %>
           </div>
           <div class="form-group">
             <%= ff.label :email, :class => 'col-sm-2 control-label' %>
             <div class="col-sm-6">
               <%= ff.text_field :email, :class => 'form-control' %>
             </div>
-            <%= error_span(@client.profile[:email]) %>
+            <%= ff.error_span(:email) %>
           </div>
           <div class="form-group">
             <%= ff.label :credits, :class => 'col-sm-2 control-label' %>
             <div class="col-sm-6">
               <%= ff.text_field :credits, :class => 'form-control' %>
             </div>
-            <%= error_span(@client.profile[:credits]) %>
+            <%= ff.error_span(:credits) %>
           </div>
         <% end %>
 

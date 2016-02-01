@@ -28,7 +28,7 @@
           <div class="col-sm-6">
             <%= f.text_field :customer_id, :class => 'form-control' %>
           </div>
-          <%= error_span(@transaction[:customer_id]) %>
+          <%= f.error_span(:customer_id) %>
         </div>
 -->
 
@@ -39,7 +39,7 @@
             <%= collection_select( :transaction, :customer_id, Profile.includes(:user).order(:name), :customer_id, :name, { :multiple => false }, {class: "form-control"})%>
 
           </div>
-          <%= error_span(@transaction[:customer_id]) %>
+          <%= f.error_span(:customer_id) %>
         </div>
 
 
@@ -50,7 +50,7 @@
             <%= collection_select( :transaction, :product_id, @products, :id, :name_price, { :multiple => false }, {class: "form-control"})%>
 
           </div>
-          <%= error_span(@transaction[:product_id]) %>
+          <%= f.error_span(:product_id) %>
         </div>
 
         <div class="form-group">
@@ -58,7 +58,7 @@
           <div class="col-sm-6">
             <%= f.number_field :quantity, min:1, value: 1, :class => 'form-control' %>
           </div>
-          <%= error_span(@transaction[:quantity]) %>
+          <%= f.error_span(:quantity) %>
         </div>
 
 

@@ -24,7 +24,7 @@
           <div class="col-sm-6">
             <%= f.text_field :client_id, :class => 'form-control' %>
           </div>
-          <%= error_span(@sale[:client_id]) %>
+          <%= f.error_span(:client_id) %>
         </div>
         <div class="form-group">
           <%= f.label :product_id, class: 'col-sm-2 control-label' %>
@@ -33,7 +33,7 @@
             <%= collection_select( :sale, :product_id, Product.all, :id, :name_price, { :multiple => false }, {class: "form-control"})%>
 
           </div>
-          <%= error_span(@sale[:client_id]) %>
+          <%= f.error_span(:client_id) %>
         </div>
 
         <!-- TODO: pesquisar outra maneira de passar o user_id do usuario logado -->

@@ -25,49 +25,49 @@
           <div class="col-sm-6">
             <%= f.text_field :name, :class => 'form-control' %>
           </div>
-          <%= error_span(@profile[:name]) %>
+          <%= f.error_span(:name) %>
         </div>
         <div class="form-group">
           <%= f.label :cpf, :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
             <%= f.text_field :cpf, :class => 'form-control' %>
           </div>
-          <%= error_span(@profile[:cpf]) %>
+          <%= f.error_span(:cpf) %>
         </div>
         <div class="form-group">
           <%= f.label :rg, :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
             <%= f.text_field :rg, :class => 'form-control' %>
           </div>
-          <%= error_span(@profile[:rg]) %>
+          <%= f.error_span(:rg) %>
         </div>
         <div class="form-group">
           <%= f.label :telephone, :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
             <%= f.text_field :telephone, :class => 'form-control' %>
           </div>
-          <%= error_span(@profile[:telephone]) %>
+          <%= f.error_span(:telephone) %>
         </div>
         <div class="form-group">
           <%= f.label :cell_phone, :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
             <%= f.text_field :cell_phone, :class => 'form-control' %>
           </div>
-          <%= error_span(@profile[:cell_phone]) %>
+          <%= f.error_span(:cell_phone) %>
         </div>
         <div class="form-group">
           <%= f.label :email, :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
             <%= f.text_field :email, :class => 'form-control' %>
           </div>
-          <%= error_span(@profile[:email]) %>
+          <%= f.error_span(:email) %>
         </div>
         <div class="form-group">
           <%= f.label :credits, :class => 'col-sm-2 control-label' %>
           <div class="col-sm-6">
             <%= f.number_field :credits, :class => 'form-control' %>
           </div>
-          <%= error_span(@profile[:credits]) %>
+          <%= f.error_span(:credits) %>
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-6">

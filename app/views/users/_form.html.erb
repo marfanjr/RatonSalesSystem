@@ -24,7 +24,7 @@
       <div class="col-sm-6">
         <%= ff.text_field :name, :class => 'form-control' %>
       </div>
-      <%= error_span(@user.profile[:name]) %>
+      <%= ff.error_span(:name) %>
     </div>
 
     <div class="form-group">
@@ -32,7 +32,7 @@
       <div class="col-sm-6">
         <%= ff.text_field :email, :class => 'form-control' %>
       </div>
-      <%= error_span(@user.profile[:email]) %>
+      <%= ff.error_span(:email) %>
     </div>
 
   <% end %>
@@ -48,7 +48,7 @@
         <%= label_tag(:age_employee, "Employee") %>
 
       </div>
-      <%= error_span(@user.profile[:email]) %>
+      <%= f.error_span(:email) %>
     </div>
 
 

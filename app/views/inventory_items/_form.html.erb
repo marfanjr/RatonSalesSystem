@@ -27,7 +27,7 @@
             <%= collection_select( :inventory_item, :product_id, Product.all, :id, :name, { :multiple => false }, {class: "form-control"})%>
 
           </div>
-          <%= error_span(@inventory_item[:product_id]) %>
+          <%= f.error_span(:product_id) %>
         </div>
 
         <div class="form-group">
@@ -35,7 +35,7 @@
           <div class="col-sm-6">
             <%= f.number_field :amount_purchased, :class => 'form-control' %>
           </div>
-          <%= error_span(@inventory_item[:amount_purchased]) %>
+          <%= f.error_span(:amount_purchased) %>
         </div>
 
         <div class="form-group">
@@ -43,7 +43,7 @@
           <div class="col-sm-6">
             <%= f.text_field :unit_cost, :class => 'form-control' %>
           </div>
-          <%= error_span(@inventory_item[:unit_cost]) %>
+          <%= f.error_span(:unit_cost) %>
         </div>
 
 <!--         <div class="form-group">
@@ -51,7 +51,7 @@
           <div class="col-sm-6">
             <%= f.number_field :profit_margin, :class => 'form-control' %>
           </div>
-          <%= error_span(@inventory_item[:profit_margin]) %>
+          <%= f.error_span(:profit_margin) %>
         </div> -->
 
         <!--TODO: Pesquisar maneira mais elegante de passar o id da festa no objeto-->
