@@ -16,8 +16,8 @@ gem 'awesome_print', group: :development
 gem 'selectize-rails'
 
 gem 'therubyracer'
-# gem 'less-rails'
-# gem 'twitter-bootstrap-rails'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 gem 'bootstrap-material-design'
 
