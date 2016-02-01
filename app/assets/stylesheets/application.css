@@ -14,8 +14,6 @@
  *= require_self
  *= require selectize
  *= require selectize.default
- *= import twitter/bootstrap
- *= import twitter/bootstrap-responsive
  *= require bootstrap-material-design
  *= require bootstrap_and_overrides
 

@@ -6,8 +6,8 @@ gem 'annotate'
 
 gem 'cancancan', '~> 1.10'
 
-# gem 'mysql2', '~> 0.3.18'
-gem 'pg'
+gem 'mysql2', '~> 0.3.18'
+# gem 'pg'
 
 gem 'rails_12factor', group: :production
 
@@ -16,8 +16,8 @@ gem 'awesome_print', group: :development
 gem 'selectize-rails'
 
 gem 'therubyracer'
-gem 'less-rails'
-gem 'twitter-bootstrap-rails'
+# gem 'less-rails'
+# gem 'twitter-bootstrap-rails'
 
 gem 'bootstrap-material-design'
 
