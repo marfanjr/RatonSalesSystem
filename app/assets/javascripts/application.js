@@ -12,12 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-material-design
 //= require turbolinks
 //= require_tree .
 //= require selectize
 
 //= require bootstrap-datepicker
+//= require bootstrap-material-design
 
 var REGEX_EMAIL = '([a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*@' +
                   '(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)';
