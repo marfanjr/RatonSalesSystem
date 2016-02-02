@@ -5,6 +5,8 @@ class PartiesController < ApplicationController
   # GET /parties.json
   def index
     @parties = Party.all
+
+    @parties = @parties.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /parties/1

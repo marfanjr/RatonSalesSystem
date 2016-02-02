@@ -41,6 +41,8 @@
   </tbody>
 </table>
 
+<%= will_paginate @inventory_items, renderer: BootstrapPagination::Rails  %>
+
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_party_inventory_item_path,
             :class => 'btn btn-primary' %>

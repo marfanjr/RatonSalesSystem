@@ -9,6 +9,8 @@ class TransactionsController < ApplicationController
   # GET /transactions.json
   def index
     @transactions = @resource = @party.transactions
+
+    @transactions = @transactions.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /transactions/1

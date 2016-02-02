@@ -11,6 +11,7 @@ class UsersController < ApplicationController
         @users = @users.where(role: 1)
       end
     end
+    @users = @users.paginate(:page => params[:page], :per_page => 10)
   end
 
 
@@ -70,7 +71,9 @@ class UsersController < ApplicationController
 
   def bank_statement
     @shopping = Transaction.where(customer_id: params[:id])
-    
+
+    @shopping = @shopping.paginate(:page => params[:page], :per_page => 10)
+
     respond_to do |format|
       format.html { render :bank_statement }
       format.json { render json: @shopping}

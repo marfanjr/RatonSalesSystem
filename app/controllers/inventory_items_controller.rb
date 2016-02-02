@@ -8,6 +8,8 @@ class InventoryItemsController < ApplicationController
   def index
     # @inventory_items = InventoryItem.all
     @inventory_items = @resource = @party.inventory_items
+
+    @inventory_items = @inventory_items.paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /inventory_items/1

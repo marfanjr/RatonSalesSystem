@@ -12,3 +12,15 @@
 .nav.navbar-nav.navbar-right li a {
     color: lightgray;
 }
+
+
+.page-header h1 {
+    display: inline-block;
+    width: auto;
+}
+
+.page-header a {
+    display: inline-block;
+    float: right;
+}
+

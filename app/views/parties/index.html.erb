@@ -34,7 +34,7 @@
     <% end %>
   </tbody>
 </table>
-
+<%= will_paginate @parties, renderer: BootstrapPagination::Rails  %>
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_party_path,
             :class => 'btn btn-primary' %>
