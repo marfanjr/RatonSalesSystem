@@ -43,5 +43,5 @@
 #               })
 # end
 
-usecase = DbFixing.new
-usecase.post_db("db_230116")
+# usecase = DbFixing.new
+# usecase.post_db("db_230116")
