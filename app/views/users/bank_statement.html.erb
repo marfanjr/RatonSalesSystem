@@ -1,6 +1,6 @@
-<%- model_class = Sale -%>
+<%- model_class = Transaction -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => "Bank Statement"%></h1>
+  <h1><%= t("helpers.links.bank_statement") %></h1>
 </div>
 
 <dl class="dl-horizontal">
@@ -20,14 +20,13 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th>Vendor</th>
+      <th><%= model_class.human_attribute_name(:employee_id) %></th>
       <th><%= model_class.human_attribute_name(:product_id) %></th>
-      <th>Unit price</th>
-      <th>Quantity</th>
-      <th>Purchase Price</th>
-      <th>Party</th>
-
-      <th>Date of purchase</th>
+      <th><%= model_class.human_attribute_name(:product_price) %></th>
+      <th><%= model_class.human_attribute_name(:quantity) %></th>
+      <th><%= model_class.human_attribute_name(:value) %></th>
+      <th><%= model_class.human_attribute_name(:party_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
     </tr>
   </thead>
   <tbody>

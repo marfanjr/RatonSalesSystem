@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   layout :layout_by_resource
   
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_filter :authenticate_user!
   before_filter :get_session_user
 
 

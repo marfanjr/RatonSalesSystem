@@ -9,11 +9,26 @@
     </div>
     <div class="navbar-collapse collapse navbar-inverse-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to Party.model_name.human(count: 2).titleize, parties_path %></li>
-        <li><%= link_to Product.model_name.human(count: 2).titleize, products_path %></li>
-        <li><%= link_to I18n.t("activerecord.attributes.user.role.employee"), users_path(role: :employee) %></li>
-        <li><%= link_to I18n.t("activerecord.attributes.user.role.customer"), users_path(role: :customer) %></li>
-        <li><%= link_to 'Sair', destroy_user_session_path, :method=>'delete' %></li>
+        <% if can? :manage, Party %>
+          <li><%= link_to Party.model_name.human(count: 2).titleize, parties_path %></li>
+        <% end %>
+
+        <% if can? :manage, Product %>
+          <li><%= link_to Product.model_name.human(count: 2).titleize, products_path %></li>
+        <% end %>
+
+        <% if can? :manage, User %>
+          <li><%= link_to I18n.t("activerecord.attributes.user.role.employee"), users_path(role: :employee) %></li>
+        <% end %>
+
+        <% if can? :manage, User %>
+          <li><%= link_to I18n.t("activerecord.attributes.user.role.customer"), users_path(role: :customer) %></li>
+        <% end %>
+
+        <% if user_signed_in? %>
+          <li><%= link_to 'Sair', destroy_user_session_path, :method=>'delete' %></li>
+        <% end %>
+
       </ul>
     </div>
   </div>

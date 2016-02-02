@@ -20,17 +20,13 @@
   <dd><%= @profile.credits %></dd>
 </dl>
 
-<% if can? :read, User %>
-<%= link_to t('.back', :default => t("helpers.links.back")),
-              users_path, :class => 'btn btn-default'  %>
-<% end %>
 
 <% if can? :update, Profile %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
                 edit_profile_path(@profile), :class => 'btn btn-default' %>
 <% end %>
 
-<%= link_to  t("helpers.links.bank_statement"), {controller: "users", action: "bank_statement", id: current_user.id}, :class => 'btn btn-default' %>
+<%= link_to t("helpers.links.bank_statement"), {controller: "users", action: "bank_statement", id: current_user.id}, :class => 'btn btn-default' %>
 
 <!-- 
 <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
