@@ -43,9 +43,9 @@
       <div class="col-sm-6">
 
         <%= f.radio_button(:role, "customer")%>
-        <%= label_tag(:role_customer, "Customer") %>
+        <%= label_tag(:role_customer, I18n.t("activerecord.attributes.user.role.customer")) %>
         <%= f.radio_button(:role, "employee") %>
-        <%= label_tag(:age_employee, "Employee") %>
+        <%= label_tag(:age_employee, I18n.t("activerecord.attributes.user.role.employee")) %>
 
       </div>
       <%= f.error_span(:email) %>

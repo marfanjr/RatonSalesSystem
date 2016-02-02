@@ -8,8 +8,11 @@ pt-BR:
       user:
         name: "Nome"
         role:
-          employee: "Ratonenses"
-          customer: "Clientes"
+          one: "Função"
+          employee: "Ratonense"
+          customer: "Cliente"
+        one: "Usuário"
+        other: "Usuários"
         email: "E-mail"
         password: "Senha"
         password_confirmation: "Confirmação de senha"

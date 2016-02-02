@@ -1,6 +1,11 @@
 <%- model_class = InventoryItem -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+              new_party_inventory_item_path,
+              :class => 'btn btn-primary' %>
+
 </div>
 <table class="table table-striped">
   <thead>
@@ -42,7 +47,3 @@
 </table>
 
 <%= will_paginate @inventory_items, renderer: BootstrapPagination::Rails  %>
-
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_party_inventory_item_path,
-            :class => 'btn btn-primary' %>

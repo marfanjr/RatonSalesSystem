@@ -14,27 +14,25 @@
       </div>
     </div>
   <% end %>
-  <div class="container">
-    <div class="navbar-body">
-      <div class="jumbotron">
 
-        <div class="control-group">
-          <%= f.label :name, :class => 'control-label' %>
-          <div class="controls">
+
+        <div class="form-group">
+          <%= f.label :name, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
             <%= f.text_field :name, :class => 'form-control' %>
           </div>
           <%= f.error_span(:name) %>
         </div>
-        <div class="control-group">
-          <%= f.label :price, :class => 'control-label' %>
-          <div class="controls">
+        <div class="form-group">
+          <%= f.label :price, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
             <%= f.text_field :price, :class => 'form-control' %>
           </div>
           <%= f.error_span(:price) %>
         </div>
-        <div class="control-group">
-          <%= f.label :description, :class => 'control-label' %>
-          <div class="controls">
+        <div class="form-group">
+          <%= f.label :description, :class => 'col-sm-2 control-label' %>
+          <div class="col-sm-6">
             <%= f.text_field :description, :class => 'form-control' %>
           </div>
           <%= f.error_span(:description) %>
@@ -44,7 +42,4 @@
         <%= f.submit nil, :class => 'btn btn-primary' %>
         <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                   products_path, :class => 'btn btn-default' %>
-      </div>
-    </div>
-  </div>
 <% end %>
