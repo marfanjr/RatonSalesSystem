@@ -9,3 +9,6 @@
 
   */
 
+.nav.navbar-nav.navbar-right li a {
+    color: lightgray;
+}

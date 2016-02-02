@@ -19,7 +19,7 @@
         <td><%= user.email %></td>
         <td><%= user.profile.credits %></td>
         <td>
-          <%= link_to 'Bank Statement', {controller: "users", action: "bank_statement", id: user.id}, :class => 'btn btn-default btn-xs' %>
+          <%= link_to t("helpers.links.bank_statement"), {controller: "users", action: "bank_statement", id: user.id}, :class => 'btn btn-default btn-xs' %>
         </td>
       </tr>
     <% end %>

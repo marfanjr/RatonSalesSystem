@@ -30,7 +30,7 @@
                 edit_profile_path(@profile), :class => 'btn btn-default' %>
 <% end %>
 
-<%= link_to 'Bank Statement', {controller: "users", action: "bank_statement", id: current_user.id}, :class => 'btn btn-default' %>
+<%= link_to  t("helpers.links.bank_statement"), {controller: "users", action: "bank_statement", id: current_user.id}, :class => 'btn btn-default' %>
 
 <!-- 
 <%= link_to t('.destroy', :default => t("helpers.links.destroy")),

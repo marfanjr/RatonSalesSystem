@@ -1,0 +1,18 @@
+pt-BR:
+  activerecord:
+    models:
+      inventory_item:
+        one: "Item"
+        other: "Estoque"
+    attributes:
+      inventory_item:
+        amount_purchased: "Total Comprado"
+        unit_cost: "Custo unitário"
+        total_cost: "Custo total"
+        profit_margin: "Margem de lucro"
+        amount_sold: "Total vendido"
+        product_id: "Produto"
+        party_id: "Festa"
+        msrp: "Preço sugerido"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"

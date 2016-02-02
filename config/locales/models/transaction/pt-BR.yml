@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    errors:
+      models:
+        transaction:
+          attributes:
+
+    models:
+      transaction:
+        one: "Venda"
+        other: "Vendas"
+    attributes:
+      transaction:
+        employee_id: "Ratonense"
+        customer_id: "Cliente"
+        quantity: "Quantidade"
+        value: "Valor"
+        product_id: "Produto"
+        product_name: "Produto"
+        product_price: "Preço"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"

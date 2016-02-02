@@ -38,58 +38,23 @@
   </head>
   <body>
 
-    <header class="navbar navbar-default navbar-static-top" role="banner">
-      <div class="container">
+    <%= render 'layouts/navigation' %>
 
-        <div class="btn-group btn-lg" role="group" aria-label="...">
-          <!--
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              New
-              <span class="caret"></span>
-            </button>
-
-            <ul class="dropdown-menu">
-              <li><a href="/products/new">Product</a></li>
-              <li><a href="/clients/new">Client</a></li>
-            </ul>
-          </div>
-            -->
-          <a href="/" class="btn btn-primary">Raton Sales System</a>
-<!--           <% if can? :read, Transaction %>
-            <a href="/transactions/new" class="btn btn-default">Transactions</a>
-          <% end %> -->
-          
-          <% if can? :read, Party  %>
-            <a href="/parties" class="btn btn-primary">Parties</a>
-          <% end %>
-
-          <% if can? :read, Product %>
-            <a href="/products" class="btn btn-primary">Products</a>
-          <% end %>
-
-          <% if can? :read, User %>
-            <a href="/users?role=employee" class="btn btn-primary">Employee</a>
-          <% end %>
-          
-          <% if can? :read, User %>
-            <a href="/users?role=customer" class="btn btn-primary">Customers</a>
-          <% end %>
-
-          <% if user_signed_in? %>
-            <a href="/signout" data-method="delete" class="btn btn-primary"> <%= current_user.profile.name.partition(" ").first %> - Logout</a>
-          <% end %>
-
-        </div>
-      </div>
-    </header>
+    <%= bootstrap_flash %>
 
     <div class="container">
-
+      <div class="row">
         <div class="col-md-9">
           <%= yield %>
         </div> 
+      </div>
+      <footer>
+        <p>&copy; Repúblicka Del Raton <%= Date.today.year %></p>
+      </footer>
     </div>
+
+
+
   </body>
 </html>
 

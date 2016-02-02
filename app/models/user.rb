@@ -39,6 +39,9 @@ class User < ActiveRecord::Base
 
   enum role: [:employee, :customer]
 
+  scope :only_employees, -> { where(role: "employee") }
+  scope :only_customers, -> { where(role: "customer") }
+
   def email_required?
   	false  	
   end

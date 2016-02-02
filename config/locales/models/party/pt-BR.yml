@@ -1,0 +1,13 @@
+pt-BR:
+  activerecord:
+    models:
+      party:
+        one: "Festa"
+        other: "Festas"
+    attributes:
+      party:
+        name: "Nome"
+        party_date: "Data"
+        ticket_value: "Valor do ingresso"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"

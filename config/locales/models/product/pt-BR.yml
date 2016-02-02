@@ -1,0 +1,22 @@
+pt-BR:
+  activerecord:
+    errors:
+      models:
+        product:
+          attributes:
+            name:
+            price:
+            description:
+            created_at:
+            updated_at:
+    models:
+      product:
+        one: "Produto"
+        other: "Produtos"
+    attributes:
+      product:
+        name: "Nome"
+        price: "Preço"
+        description: "Descrição"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"

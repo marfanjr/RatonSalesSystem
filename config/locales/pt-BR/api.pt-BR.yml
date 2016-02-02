@@ -1,0 +1,38 @@
+pt-BR:
+  raton-sales-system:
+    errors:
+      permission_error: "Seu usuário não tem permissão para realizar esta transação"
+      record_not_found: "Registro não encontrado."
+  helpers:
+    links:
+      salvar: "Salvar"
+      cancel: "Cancelar"
+      new: "Novo"
+      confirm: "Tem certeza?"
+      edit: "Editar"
+      destroy: "Excluir"
+      import: "Importar"
+      sell: "Vender"
+      bank_statement: "Extrato"
+    actions: "Ações"
+    titles:
+      new: "Novo %{model}"
+  general:
+    contact_photo: "Foto"
+    ad_photo: "Imagem da oferta"
+    contact_photo_placeholder: "Procurar arquivo..."
+    additional_info: "Informações adicionais"
+    contact_info: "Informações do contato"
+    region_info: "Informações da região"
+    register_page_title: "Cadastro"
+    register_action: "Cadastrar"
+    sign_in_title: "Faça login"
+    sign_in_action: "Login"
+    forgot_password_title: "Esqueceu sua senha?"
+    remember_me: "Lembrar"
+    password_reset_instructions: "Nós enviaremos instruções de alteração de senha por e-mail"
+    password_reset_label: "Resetar a senha"
+    date_period: "Período de exibição"
+    valid_date_period: "Período de validade"
+    period_start_date: "Início da Exibição"
+    valid_date_period: "Período Válido da Oferta"

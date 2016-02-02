@@ -1,0 +1,17 @@
+pt-BR:
+  activerecord:
+    models:
+      user:
+        one: "Usuário"
+        other: "Usuários"
+    attributes:
+      user:
+        name: "Nome"
+        role:
+          employee: "Ratonenses"
+          customer: "Clientes"
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Confirmação de senha"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
