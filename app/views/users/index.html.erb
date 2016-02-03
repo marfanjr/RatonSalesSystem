@@ -7,6 +7,17 @@
 
 
 </div>
+
+<%= form_tag '', :method => :get, class: "form-inline", role: "form" do %>
+    <div class="form-group">
+      <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Busca..." %>
+    </div>
+    <%= hidden_field_tag :role, params[:role] %>
+    <div class="form-group">
+      <%= submit_tag 'Filtrar', class: "btn btn-default btn-sm", role: :customer %>
+    </div>
+<% end %>
+
 <table class="table table-striped">
   <thead>
     <tr>

@@ -23,12 +23,12 @@ class Transaction < ActiveRecord::Base
 
   validates :quantity, presence:true
 
-  # after_save :set_employee
-  # after_save :set_transaction_attributes
-  # after_save :update_inventory_item
-  # after_save :cash_customer_credits
-  # after_destroy :reverse_customer_credits
-  # after_destroy :reverse_inventory_item
+  after_save :set_employee
+  after_save :set_transaction_attributes
+  after_save :update_inventory_item
+  after_save :cash_customer_credits
+  after_destroy :reverse_customer_credits
+  after_destroy :reverse_inventory_item
 
   def set_transaction_attributes
     self.product_name = self.product.name
@@ -50,11 +50,11 @@ class Transaction < ActiveRecord::Base
 
   def cash_customer_credits
     unless self.customer.presence
-      errors.add(:employee_id, "customer not found.") 
-      return       
-    end 
+      errors.add(:employee_id, "customer not found.")
+      return
+    end
   	if self.customer.profile.credits < (self.product.price * self.quantity)
-  		errors.add(:credits, "customer uncredited available") 
+  		self.errors.add(:credits, "customer uncredited available")
   		return
   	end
   	self.customer.profile.credits = self.customer.profile.credits - (self.product.price * self.quantity)

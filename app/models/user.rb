@@ -42,6 +42,16 @@ class User < ActiveRecord::Base
   scope :only_employees, -> { where(role: "employee") }
   scope :only_customers, -> { where(role: "customer") }
 
+  search_syntax do
+
+    search_by :text do |scope, phrases|
+      columns = [:id, :email, 'profiles.name']
+      scope.joins(:profile).where_like(columns => phrases)
+    end
+
+  end
+
+
   def email_required?
   	false  	
   end
