@@ -1,6 +1,6 @@
 <%= form_for @party, :html => { :class => "form-horizontal party" } do |f| %>
 
-    <% if @party.errors.any? %>
+  <% if @party.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
       <div class="panel-heading">
         <h3 class="panel-title"><%= pluralize(@party.errors.count, "error") %> prohibited this party from being saved:</h3>
@@ -16,58 +16,47 @@
   <% end %>
 
 
-  <div class="container">
-    <div class="navbar-body">
-      <div class="jumbotron">
+  <div class="form-group">
+    <%= f.label :name, :class => 'col-sm-2 control-label' %>
+    <div class="col-sm-6">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%= f.error_span(:name) %>
+  </div>
 
-
+  <div class="form-group">
+    <%= f.label :party_date, :class => 'col-sm-2 control-label' %>
+    <div class="col-sm-6">
+      <div class='col-sm-6'>
         <div class="form-group">
-          <%= f.label :name, :class => 'col-sm-2 control-label' %>
-          <div class="col-sm-6">
-            <%= f.text_field :name, :class => 'form-control' %>
-          </div>
-          <%= f.error_span(:name) %>
-        </div>
-        <div class="form-group">
-          <%= f.label :party_date, :class => 'col-sm-2 control-label' %>
-          <div class="col-sm-6">
+          <div class='input-group date' id='datetimepicker5'>
+            <%= f.text_field :party_date, "data-provide" => 'datepicker', value: Date.today.strftime('%d/%m/%Y'), class: "form-control" %>
 
-
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker5'>
-          <%= f.text_field :party_date, "data-provide" => 'datepicker', value: Date.today.strftime('%d/%m/%Y'), class: "form-control" %>
-
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
 
           </div>
-          <%= f.error_span(:party_date) %>
         </div>
-
-        <div class="form-group">
-          <%= f.label :ticket_value, :class => 'col-sm-2 control-label' %>
-          <div class="col-sm-6">
-            <%= f.number_field :ticket_value, :class => 'form-control' %>
-          </div>
-          <%= f.error_span(:ticket_value) %>
-        </div>
-
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-6">
-            <%= f.submit nil, :class => 'btn btn-primary' %>
-            <% if @party.id.presence %>
-                <%= link_to "<button class='btn btn-default'> #{InventoryItem.model_name.human(count: 2)}</button>".html_safe, party_inventory_items_path(@party) %>
-            <% end %>
-          </div>
-        </div>
-
-
       </div>
+    </div>
+    <%= f.error_span(:party_date) %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ticket_value, :class => 'col-sm-2 control-label' %>
+    <div class="col-sm-6">
+      <%= f.number_field :ticket_value, :class => 'form-control' %>
+    </div>
+    <%= f.error_span(:ticket_value) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-6">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <% if @party.id.presence %>
+          <%= link_to "<button class='btn btn-default'> #{InventoryItem.model_name.human(count: 2)}</button>".html_safe, party_inventory_items_path(@party) %>
+      <% end %>
     </div>
   </div>
 
