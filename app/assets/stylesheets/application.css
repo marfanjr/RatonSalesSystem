@@ -12,6 +12,8 @@
  *
  *= require selectize
  *= require selectize.default
+  *= require selectize
+ *= require selectize.bootstrap3
 * *= import twitter/bootstrap
 * *= import twitter/bootstrap-responsive
  *= require bootstrap-material-design
@@ -21,4 +23,20 @@
 
 */
 
+.selectize-control.single .selectize-input > div, .selectize-control.multi .selectize-input > div, .selectize-control.single .selectize-input.input-active > div, .selectize-control.multi .selectize-input.input-active > div, .selectize-control.single .selectize-input > .item, .selectize-control.multi .selectize-input > .item, .selectize-control.single .selectize-input.input-active > .item, .selectize-control.multi .selectize-input.input-active > .item {
+    background-color: #00c5b7;
+    border: 1px solid #009688;
+    color: lightgray;
+    padding-left: 5px;
+}
 
+.selectize-control.single .selectize-input > div.active, .selectize-control.multi .selectize-input > div.active, .selectize-control.single .selectize-input.input-active > div.active, .selectize-control.multi .selectize-input.input-active > div.active, .selectize-control.single .selectize-input > .item.active, .selectize-control.multi .selectize-input > .item.active, .selectize-control.single .selectize-input.input-active > .item.active, .selectize-control.multi .selectize-input.input-active > .item.active {
+    color: black;
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    padding-left: 5px;
+}
+
+.selectize-control.single .selectize-input > div:after, .selectize-control.multi .selectize-input > div:after, .selectize-control.single .selectize-input.input-active > div:after, .selectize-control.multi .selectize-input.input-active > div:after, .selectize-control.single .selectize-input > .item:after, .selectize-control.multi .selectize-input > .item:after, .selectize-control.single .selectize-input.input-active > .item:after, .selectize-control.multi .selectize-input.input-active > .item:after {
+    content: ''
+}

@@ -20,6 +20,7 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
 gem 'bootstrap-material-design'
+gem 'bootstrap-sass'
 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

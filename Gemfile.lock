@@ -207,6 +207,7 @@ DEPENDENCIES
   awesome_print
   bootstrap-datepicker-rails
   bootstrap-material-design
+  bootstrap-sass
   byebug
   cancancan (~> 1.10)
   coffee-rails (~> 4.1.0)

@@ -14,9 +14,7 @@
   <div class="form-group">
     <%= f.label :customer_id, class: 'col-sm-2 control-label' %>
     <div class="col-sm-6">
-
-      <%= collection_select( :transaction, :customer_id, Profile.includes(:user).order(:name), :customer_id, :name, { :multiple => false }, {class: "form-control"})%>
-
+      <%= select_tag :customer_id, options_from_collection_for_select(Profile.includes(:user).order(:name), "customer_id", "name", params[:customer_id]), prompt: "Selecione um cliente", class: "form-control selectize" %>
     </div>
     <%= f.error_span(:customer_id) %>
   </div>
@@ -26,7 +24,7 @@
     <%= f.label :product_id, class: 'col-sm-2 control-label' %>
     <div class="col-sm-6">
 
-      <%= collection_select( :transaction, :product_id, @products, :id, :name_price, { :multiple => false }, {class: "form-control"})%>
+      <%= collection_select( :transaction, :product_id, @products, :id, :name_price, { :multiple => false, prompt: "Selecione um produto" }, {class: "form-control selectize"})%>
 
     </div>
     <%= f.error_span(:product_id) %>

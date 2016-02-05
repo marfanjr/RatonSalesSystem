@@ -11,7 +11,7 @@ class UsersController < ApplicationController
         @users = @users.where(role: 1)
       end
     end
-    
+
     # TODO: verificar melhor maneira para fazer filtros sem poluir os controllers
     if params[:q].presence
       @users = @users.search(params[:q])

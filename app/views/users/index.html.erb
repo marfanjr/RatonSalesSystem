@@ -29,9 +29,11 @@
   </thead>
   <tbody>
     <% @users.each do |user| %>
-      <tr class='clickable-row' data-href="/profiles/<%=user.profile.id%>" >
+      <tr class='clickable-row'
+          style="cursor: pointer"
+          data-href="/profiles/<%=user.profile.id%>">
         <td><%= user.id %></td>
-        <td><%= link_to user.profile.name, profile_path(user.profile) %></td>
+        <td><%= user.profile.name %></td>
         <td><%= user.email %></td>
         <td><%= user.profile.credits %></td>
         <td>
