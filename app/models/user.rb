@@ -45,7 +45,7 @@ class User < ActiveRecord::Base
   search_syntax do
 
     search_by :text do |scope, phrases|
-      columns = [:id, :email, 'profiles.name']
+      columns = [:email, 'profiles.name']
       scope.joins(:profile).where_like(columns => phrases)
     end
 
