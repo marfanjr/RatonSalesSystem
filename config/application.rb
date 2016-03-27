@@ -19,6 +19,12 @@ module RatonSalesSystem
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     config.i18n.load_path += Dir[File.join(Rails.root,'config', 'locales', '**', '*.{rb,yml}').to_s]
 
+    config.middleware.insert_after Rails::Rack::Logger, Rack::Cors, :logger => Rails.logger do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :put, :delete, :options]
+      end
+    end
 
     config.i18n.default_locale = :'pt-BR'
 
